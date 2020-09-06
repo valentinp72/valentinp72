@@ -15,8 +15,8 @@ jobs:
 
     - name: Hugo build
       uses: klakegg/actions-hugo@1.0.0
-	
-	- name: Deploy
+
+    - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
