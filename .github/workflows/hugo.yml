@@ -13,5 +13,12 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
 
-    - name: hugo
+    - name: Hugo build
       uses: klakegg/actions-hugo@1.0.0
+	
+	- name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages 
+          FOLDER: public
