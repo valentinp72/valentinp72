@@ -21,6 +21,7 @@ jobs:
       with:
           image: ext-alpine
           target: public
+          command: --baseURL valentinp72.fr
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.9
