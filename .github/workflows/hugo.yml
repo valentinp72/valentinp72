@@ -13,11 +13,15 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
 
+    - name: Checkout submodules
+      uses: textbook/git-checkout-submodule-action@master
+
     - name: Hugo build
       uses: klakegg/actions-hugo@1.0.0
       with:
           image: ext-alpine
           target: public
+          command: --baseURL https://valentinp72.fr/
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.9
