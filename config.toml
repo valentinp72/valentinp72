@@ -1,15 +1,15 @@
-title = "Researcher"
-baseURL = "https://example.com"
+title = "Valentin Pelloin"
+baseURL = "https://valentinp72.fr"
 theme = "researcher"
-disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
+disableKinds = ["taxonomy", "term", "robotsTXT"]
 enableEmoji = true
 
 [params]
-  author = "Olivier Roques"
-  description = "A simple monospaced resume theme for Hugo."
+  author = "Valentin Pelloin"
+  description = ""
   favicon = "favicon.ico"
   [params.footer]
-    text = "By Olivier Roques"
+    text = "Theme by Olivier Roques"
     url = "https://github.com/ojroques/hugo-researcher"
 
 [permalinks]

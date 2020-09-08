@@ -2,23 +2,17 @@
 title = "Contact"
 +++
 
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
-* Phone: [+91-123123](tel:+91-123123)
+# Contact me
 
----
-
-## Mailing Address
-
-> 221B, Baker Street
->
-> London
->
-> United Kingdom
+* Emails:
+	* valentin<!-- abc@def -->pelloin@gm<!-- @abc.com -->ail.com
+	* valentin.<!-- abc@def -->pelloin@univ<!-- @abc.com -->-lemans.fr
 
 ---
 
 ## Social
 
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
+1. [Github](https://mastodon.vlntn.pw/@valentinp72)
+2. [Twitter](https://twitter.com/valentinp72)
+3. [Mastodon](https://mastodon.vlntn.pw/@valentinp72)
+4. [Linkedin](https://www.linkedin.com/in/valentin-pelloin/)

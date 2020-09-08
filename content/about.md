@@ -1,12 +1,20 @@
 +++
-title = "About"
+title = "Valentin Pelloin"
 +++
 
 ## About Me
 
 {{< figure class="avatar" src="/avatar.jpg" >}}
 
-This is a Hugo based resume template. You can find the full source code on [GitHub](https://github.com/ojroques/hugo-researcher).
+I'm a PhD student working on spoken language understanding projects.
+Interested in computer science and artificial intelligence, I did a Degree and a Master's degree in computer science in Le Mans University (France).
+
+
+## Research Interest
+
+## Publications
+
+<!-- This is a Hugo based resume template. You can find the full source code on [GitHub](https://github.com/ojroques/hugo-researcher).
 
 ## Research Interest
 
@@ -42,3 +50,7 @@ Here is a blockquote
 
 * Foo Bar: Head of Department, Placeholder Names, Lorem
 * John Doe: Associate Professor, Department of Computer Science, Ipsum
+
+--!>
+
+
