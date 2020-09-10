@@ -12,10 +12,10 @@
     
     <item>
       <title>Notes: Attention! Transformers!</title>
-      <link>https://valentinp72.fr/posts/the-transformer/</link>
+      <link>https://valentinp72.fr/posts/attention-transformers/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://valentinp72.fr/posts/the-transformer/</guid>
+      <guid>https://valentinp72.fr/posts/attention-transformers/</guid>
       <description>&lt;p&gt;Attention mechanisms, used in encoder-decoder reccurrent neural networks are able to align an input sequence to an output sequence.
 The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34;&gt;Attention Is All You Need&lt;/a&gt;&amp;rdquo; is a network architecture capable of sequence-to-sequence translations, without using recurrence, and thus, allowing parallelization.&lt;/p&gt;</description>
     </item>
