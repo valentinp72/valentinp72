@@ -21,30 +21,28 @@ The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1
     </item>
     
     <item>
-      <title>Introduction</title>
-      <link>https://valentinp72.fr/posts/what-is-hugo/</link>
-      <pubDate>Sat, 03 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://valentinp72.fr/posts/what-is-hugo/</guid>
-      <description>&lt;p&gt;Hugo is an open-source project and lives by the work of its contributors. There are plenty of open issues, and we need your help to make Hugo even more awesome. You don&amp;rsquo;t need to be a Go guru to contribute to the project&amp;rsquo;s development.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>What is Hugo</title>
-      <link>https://valentinp72.fr/posts/introduction/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://valentinp72.fr/posts/introduction/</guid>
-      <description>&lt;p&gt;Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://valentinp72.fr/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://valentinp72.fr/contact/</guid>
-      <description>Contact me  Emails:  valentinpelloin@gmail.com valentin.pelloin@univ-lemans.fr     Social  Github Twitter Mastodon Linkedin  </description>
+      <description>Contact me   You can contact by email at:
+ valentin.pelloin@univ-lemans.fr valentinpelloin@gmail.com    Or, on social medias:
+ Github Twitter Mastodon Linkedin    </description>
+    </item>
+    
+    <item>
+      <title>Gallery</title>
+      <link>https://valentinp72.fr/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://valentinp72.fr/gallery/</guid>
+      <description>Jupiter (filmed)
+      Full moon
+      Starry sky 1
+      Starry sky 2
+      Starry sky 3
+      The moon (filmed)</description>
     </item>
     
     <item>
@@ -53,8 +51,8 @@ The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://valentinp72.fr/about/</guid>
-      <description>About Me  I&amp;rsquo;m a PhD student working on spoken language understanding projects. Interested in computer science and artificial intelligence, I did a Degree and a Master&amp;rsquo;s degree in computer science in Le Mans University (France).
-Research Interest Publications To a great mind, nothing is little ## References * Foo Bar: Head of Department, Placeholder Names, Lorem * John Doe: Associate Professor, Department of Computer Science, Ipsum --! </description>
+      <description>About Me    I&amp;rsquo;m a PhD student working on spoken language understanding projects. Interested in computer science and artificial intelligence, I did a Degree and a Master&amp;rsquo;s degree in computer science in Le Mans University (France).
+Research Interest I am currently doing my PhD at LIUM, within the AISSPER (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the AISSPER project is to offer new algorithms in order to solve spoken language understanding tasks.</description>
     </item>
     
   </channel>

@@ -17,6 +17,10 @@
 
     
         <link rel="icon" type="image/ico" href="https://valentinp72.fr/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
     
 
 	
@@ -81,6 +85,11 @@
                         <span class="nav-item navbar-text mx-1">/</span>
                     
                 
+                    <a class="nav-item nav-link" href="/gallery">Gallery</a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
                     <a class="nav-item nav-link" href="/contact">Contact</a>
                     
                 
@@ -92,54 +101,31 @@
 <div id="content">
 <div class="container">
     <h2 id="about-me">About Me</h2>
-<figure class="avatar">
-    <img src="/avatar.jpg"/> 
-</figure>
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure class="avatar no-photoswipe" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/avatar-mono.jpg" />
+    </div>
+	
+	
+    
+  </figure>
+</div>
 
 <p>I&rsquo;m a PhD student working on spoken language understanding projects.
 Interested in computer science and artificial intelligence, I did a Degree and a Master&rsquo;s degree in computer science in Le Mans University (France).</p>
 <h2 id="research-interest">Research Interest</h2>
+<p>I am currently doing my PhD at LIUM, within the AISSPER (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the AISSPER project is to offer new algorithms in order to solve spoken language understanding tasks. AISSPER aims at building end-to-end artificial intelligence systems capable of extracting semantic concepts directly from the speech signal.</p>
 <h2 id="publications">Publications</h2>
-<!-- This is a Hugo based resume template. You can find the full source code on [GitHub](https://github.com/ojroques/hugo-researcher).
-
-## Research Interest
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
-
-## Publications
-
-In chronological order:
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
-
-## Typography
-
-This is a [link](http://google.com). Something *italics* and something **bold**.
-
-Here is a table
-
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
-
-Here is a horizontal rule
-
----
-
-Here is a blockquote
-
-> To a great mind, nothing is little
-
-## References
-
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
-
---!>
-
-
+<ol>
+<li>Pelloin Valentin and Thibault Prouteau (2020). <a href="https://www.aclweb.org/anthology/2020.jeptalnrecital-recital.13.pdf">Apprentissage de plongements de mots sur des corpus en langue de spécialité : une étude d’impact (Learning word embeddings on domain specific corpora: an impact study)</a>. In <em>Actes de la 6e conférence conjointe Journées d&rsquo;Études sur la Parole (JEP, 33e édition), Traitement Automatique des Langues Naturelles (TALN, 27e édition), Rencontre des Étudiants Chercheurs en Informatique pour le Traitement Automatique des Langues (RECITAL, 22e édition).</em></li>
+</ol>
+<h2 id="other-work">Other work</h2>
+<ul>
+<li><a href="https://github.com/valentinp72/svd2vec">svd2vec</a>, a Python library that converts words to vectors using PMI and SVD</li>
+</ul>
 
 </div>
 
@@ -149,8 +135,8 @@ Here is a blockquote
         <div class="container text-center mb-2">
             <a href="https://github.com/ojroques/hugo-researcher"><small>Theme by Olivier Roques</small></a>
         </div>
-
     </div>
+
 
 </body>
 </html>
