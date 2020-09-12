@@ -4,15 +4,12 @@ title = "Contact"
 
 # Contact me
 
-* Emails:
-	* valentin<!-- abc@def -->pelloin@gm<!-- @abc.com -->ail.com
-	* valentin.<!-- abc@def -->pelloin@univ<!-- @abc.com -->-lemans.fr
+- You can contact by email at:
+    - valentin.<!-- abc@def -->pelloin@univ<!-- @abc.com -->-lemans.fr
+    - valentin<!-- abc@def -->pelloin@gm<!-- @abc.com -->ail.com
+- Or, on social medias:
 
----
-
-## Social
-
-1. [Github](https://github.com/valentinp72/)
-2. [Twitter](https://twitter.com/valentinp72)
-3. [Mastodon](https://mastodon.vlntn.pw/@valentinp72)
-4. [Linkedin](https://www.linkedin.com/in/valentin-pelloin/)
+  - [Github](https://github.com/valentinp72/)
+  - [Twitter](https://twitter.com/valentinp72)
+  - [Mastodon](https://mastodon.vlntn.pw/@valentinp72)
+  - [Linkedin](https://www.linkedin.com/in/valentin-pelloin/)

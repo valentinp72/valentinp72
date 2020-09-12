@@ -4,7 +4,7 @@ title = "Valentin Pelloin"
 
 ## About Me
 
-{{< figure class="avatar" src="/avatar.jpg" >}}
+{{< figure class="avatar no-photoswipe" src="/avatar-mono.jpg" nolink="yes" >}}
 
 I'm a PhD student working on spoken language understanding projects.
 Interested in computer science and artificial intelligence, I did a Degree and a Master's degree in computer science in Le Mans University (France).
@@ -12,45 +12,14 @@ Interested in computer science and artificial intelligence, I did a Degree and a
 
 ## Research Interest
 
-## Publications
-
-<!-- This is a Hugo based resume template. You can find the full source code on [GitHub](https://github.com/ojroques/hugo-researcher).
-
-## Research Interest
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+I am currently doing my PhD at LIUM, within the AISSPER (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the AISSPER project is to offer new algorithms in order to solve spoken language understanding tasks. AISSPER aims at building end-to-end artificial intelligence systems capable of extracting semantic concepts directly from the speech signal.
 
 ## Publications
 
-In chronological order:
-1. F.Bar, J.Doe: Effects of having a placeholder of a name
-2. S.Holmes, J.Watson: Consequences of living with a sociopath in London
+1. Pelloin Valentin and Thibault Prouteau (2020). [Apprentissage de plongements de mots sur des corpus en langue de spécialité : une étude d’impact (Learning word embeddings on domain specific corpora: an impact study)](https://www.aclweb.org/anthology/2020.jeptalnrecital-recital.13.pdf). In *Actes de la 6e conférence conjointe Journées d'Études sur la Parole (JEP, 33e édition), Traitement Automatique des Langues Naturelles (TALN, 27e édition), Rencontre des Étudiants Chercheurs en Informatique pour le Traitement Automatique des Langues (RECITAL, 22e édition).*
 
-## Typography
+## Other work
 
-This is a [link](http://google.com). Something *italics* and something **bold**.
-
-Here is a table
-
-Year | Award | Category
------|-------|--------
-2014 | Emmy  | Won Outstanding Lead Actor in a miniseries or a movie
-2015 | BAFTA | Nominated for Best Leading Actor for Sherlock
-2014 | Satellite | Won Best Actor miniseries or television film
-
-Here is a horizontal rule
-
----
-
-Here is a blockquote
-
-> To a great mind, nothing is little
-
-## References
-
-* Foo Bar: Head of Department, Placeholder Names, Lorem
-* John Doe: Associate Professor, Department of Computer Science, Ipsum
-
---!>
+- [svd2vec](https://github.com/valentinp72/svd2vec), a Python library that converts words to vectors using PMI and SVD
 
 

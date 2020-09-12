@@ -89,13 +89,6 @@
             }
         }
     }
-    .avatar > img {
-        border-radius: 50%;
-        float: right;
-        margin: -8px 0 0 16px;
-        height: $avatar-size;
-        width: $avatar-size;
-    }
     .highlight {
         margin: $margin-y auto;
         & > pre {
@@ -107,6 +100,14 @@
     a {
         @extend %link-dark;
     }
+}
+
+.avatar {
+	border-radius: 50%;
+	float: right;
+	margin: -8px 0 0 16px;
+	height: $avatar-size;
+	width: $avatar-size;
 }
 
 code.has-jax {
