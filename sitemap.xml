@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://valentinp72.fr/posts/attention-transformers/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://valentinp72.fr/posts/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://valentinp72.fr/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://valentinp72.fr/contact/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://valentinp72.fr/gallery/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://valentinp72.fr/about/</loc>
   </url>
-  
 </urlset>
