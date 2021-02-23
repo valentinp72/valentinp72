@@ -1,5 +1,5 @@
 title = "Valentin Pelloin"
-baseURL = "https://valentinp72.fr"
+baseURL = "https://vpelloin.fr"
 theme = "researcher"
 disableKinds = ["taxonomy", "term", "robotsTXT"]
 enableEmoji = true
