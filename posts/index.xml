@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Valentin Pelloin</title>
-    <link>https://valentinp72.fr/posts/</link>
+    <link>https://vpelloin.fr/posts/</link>
     <description>Recent content in Posts on Valentin Pelloin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://valentinp72.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.fr/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes: Attention! Transformers!</title>
-      <link>https://valentinp72.fr/posts/attention-transformers/</link>
+      <link>https://vpelloin.fr/posts/attention-transformers/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://valentinp72.fr/posts/attention-transformers/</guid>
+      <guid>https://vpelloin.fr/posts/attention-transformers/</guid>
       <description>&lt;p&gt;Attention mechanisms, used in encoder-decoder reccurrent neural networks are able to align an input sequence to an output sequence.
 The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34;&gt;Attention Is All You Need&lt;/a&gt;&amp;rdquo; is a network architecture capable of sequence-to-sequence translations, without using recurrence, and thus, allowing parallelization.&lt;/p&gt;</description>
     </item>

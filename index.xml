@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Valentin Pelloin</title>
-    <link>https://valentinp72.fr/</link>
+    <link>https://vpelloin.fr/</link>
     <description>Recent content on Valentin Pelloin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://valentinp72.fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.fr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes: Attention! Transformers!</title>
-      <link>https://valentinp72.fr/posts/attention-transformers/</link>
+      <link>https://vpelloin.fr/posts/attention-transformers/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://valentinp72.fr/posts/attention-transformers/</guid>
+      <guid>https://vpelloin.fr/posts/attention-transformers/</guid>
       <description>&lt;p&gt;Attention mechanisms, used in encoder-decoder reccurrent neural networks are able to align an input sequence to an output sequence.
 The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34;&gt;Attention Is All You Need&lt;/a&gt;&amp;rdquo; is a network architecture capable of sequence-to-sequence translations, without using recurrence, and thus, allowing parallelization.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://valentinp72.fr/contact/</link>
+      <link>https://vpelloin.fr/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://valentinp72.fr/contact/</guid>
+      <guid>https://vpelloin.fr/contact/</guid>
       <description>Contact me   You can contact by email at:
  valentin.pelloin@univ-lemans.fr valentinpelloin@gmail.com    Or, on social medias:
  Github Twitter Mastodon Linkedin    </description>
@@ -29,10 +29,10 @@ The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1
     
     <item>
       <title>Gallery</title>
-      <link>https://valentinp72.fr/gallery/</link>
+      <link>https://vpelloin.fr/gallery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://valentinp72.fr/gallery/</guid>
+      <guid>https://vpelloin.fr/gallery/</guid>
       <description>Jupiter (filmed)
       Miky way 1
       Miky way 2
@@ -43,10 +43,10 @@ The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1
     
     <item>
       <title>Valentin Pelloin</title>
-      <link>https://valentinp72.fr/about/</link>
+      <link>https://vpelloin.fr/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://valentinp72.fr/about/</guid>
+      <guid>https://vpelloin.fr/about/</guid>
       <description>About Me    I&amp;rsquo;m a PhD student working on spoken language understanding projects. Interested in computer science and artificial intelligence, I did a Degree and a Master&amp;rsquo;s degree in computer science in Le Mans University (France).
 Research Interest I am currently doing my PhD at LIUM, within the AISSPER (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the AISSPER project is to offer new algorithms in order to solve spoken language understanding tasks.</description>
     </item>
