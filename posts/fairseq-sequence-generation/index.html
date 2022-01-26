@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Notes: How does sequence generation works in Fairseq/Espresso?</title>
+    <base href="https://vpelloin.fr/">
+    <meta name="description" content="">
+    <meta name="author" content='Valentin Pelloin'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="https://vpelloin.fr/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+    
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [['$','$']],
+      displayMath: [['$$','$$']],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"], linebreaks: { automatic: true, width: "container" } }
+  });
+</script>
+
+<script type="text/javascript"
+		   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+</script>
+
+</head>
+<body><div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row p-0">
+        <a class="navbar-brand mr-sm-auto" href="https://vpelloin.fr/">Valentin Pelloin</a>
+        <div class="navbar-nav flex-row">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/about">About</a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/posts">Posts</a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/gallery">Gallery</a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/contact">Contact</a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+	<h1>Notes: How does sequence generation works in Fairseq/Espresso?</h1>
+	Jan. 14, 2021
+	
+	
+	<hr/>
+	<p><a href="https://github.com/pytorch/fairseq">Fairseq</a> is a &ldquo;sequence sequence modeling toolkit written in <a href="http://pytorch.org/">PyTorch</a> that allows researchers and developers to train custom models for translation, summarization, language modeling and other text generation tasks&rdquo;. I will try to explain how fairesq generates sequences with a Language Model while using a beam search algorithm.</p>
+<p><strong>Important:</strong> I describe here a simplified version of my understanding of the sequence generation algorithm. For a fully detailed understanding, you must dive into the code.</p>
+<h2 id="introduction">Introduction</h2>
+<p>I&rsquo;m going to explain the <a href="https://github.com/freewym/espresso/blob/6d29f790c24fbad336fee69db98ee0b34e5cd9b6/fairseq/sequence_generator.py#L17">SequenceGenerator</a>&rsquo;s function <a href="https://github.com/freewym/espresso/blob/6d29f790c24fbad336fee69db98ee0b34e5cd9b6/fairseq/sequence_generator.py#L86">generate(&hellip;)</a> from <a href="https://github.com/freewym/espresso">Espresso</a>, a toolkit based on Fairseq. Reference commit used:  6d29f790c24fbad336fee69db98ee0b34e5cd9b6 on 23 February 2020). The SequenceGenerator from Espresso is almost identical to the original one on Fairseq.</p>
+<p>The SequenceGenerator is used to generate outputs from a batch of inputs using models. We can see models as a list composed of one or more models :</p>
+<pre><code>- A transcription model with an encoder part and a decoder system
+- A language model : only the decoder part
+</code></pre>
+<p>The SequenceGenerator&rsquo;s generate function is &ldquo;only&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate</span>(self, models, sample, <span style="color:#f92672">**</span>kwargs):
+    <span style="color:#e6db74">&#34;&#34;&#34;Generate a batch of translations.
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    Args:
+</span><span style="color:#e6db74">        models (List[~fairseq.models.FairseqModel]): ensemble of models
+</span><span style="color:#e6db74">        sample (dict): batch
+</span><span style="color:#e6db74">        prefix_tokens (torch.LongTensor, optional): force decoder to begin
+</span><span style="color:#e6db74">            with these tokens
+</span><span style="color:#e6db74">        bos_token (int, optional): beginning of sentence token
+</span><span style="color:#e6db74">            (default: self.eos)
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    lm_weight <span style="color:#f92672">=</span> kwargs<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;lm_weight&#39;</span>, <span style="color:#ae81ff">0.0</span>)
+    <span style="color:#66d9ef">if</span> lm_weight <span style="color:#f92672">==</span> <span style="color:#ae81ff">0.0</span>:
+      	<span style="color:#75715e"># EnsembleModel: fusion all the models outputs together. Note: we can have only one model here</span>
+        <span style="color:#75715e"># =&gt; probs are averaged</span>
+        model <span style="color:#f92672">=</span> EnsembleModel(models)
+    <span style="color:#66d9ef">else</span>:
+      	<span style="color:#75715e"># LMFusionModel: fusion models[0] (ASR model) with models[1] (LM model)</span>
+        <span style="color:#75715e"># =&gt; probs are averaged, with a lm_weight ponderation for the LM</span>
+        model <span style="color:#f92672">=</span> LMFusionModel(models, lm_weight)
+    <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_generate(model, sample, <span style="color:#f92672">**</span>kwargs)
+</code></pre></div><p>So, how does the <code>_generate(model, sample, **kwargs)</code> function works ? Well first, we&rsquo;ll start by looking at the arguments:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_generate</span>(
+    self,
+    model,  <span style="color:#75715e"># the model (EnsembleModel or LMFusionModel)</span>
+            <span style="color:#75715e"># will be used to call encoder_forward and decoder_forward</span>
+    sample, <span style="color:#75715e"># a dict containing at least &#34;net_input&#34;. for example:</span>
+            <span style="color:#75715e"># {&#39;net_input&#39;: {</span>
+            <span style="color:#75715e">#   &#39;src_tokens&#39;: tensor([[35, 68]]), # tensor with ids of tokens &#34;already&#34; emitted</span>
+            <span style="color:#75715e">#   &#39;src_lengths&#39;: tensor([2])        # the current length of this tensor</span>
+            <span style="color:#75715e"># }}</span>
+    prefix_tokens<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, <span style="color:#75715e"># can replace the src_tokens tensor in sample </span>
+    bos_token<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
+    <span style="color:#f92672">**</span>kwargs
+):
+</code></pre></div><p>If your model have an encoder, it will first compute it&rsquo;s output with this line. If you don&rsquo;t have a encoder, encoder_outs will be <code>None</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">encoder_outs <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>forward_encoder(encoder_input)
+</code></pre></div><h2 id="decoding-algorithm">Decoding algorithm</h2>
+<p>Then, the decoding step will use a beam search algorithm to find best sequences. For this example, we set <code>beam_size = 5</code>. That means that, at each decoding step, only the 5 most likely sequence hypotheses will be kept.</p>
+<p>Here is what happens for each decoding <code>step</code> :</p>
+<h3 id="1-forward">1/ Forward</h3>
+<p>Log-Probabilities for each output-dictionary tokens are obtained with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">lprobs, avg_attn_scores <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>forward_decoder(
+	tokens[:, :step <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>], encoder_outs, temperature<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>temperature,
+)
+
+lprobs[lprobs <span style="color:#f92672">!=</span> lprobs] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>math<span style="color:#f92672">.</span>inf    <span style="color:#75715e"># replace NaNs by -∞</span>
+lprobs[:, self<span style="color:#f92672">.</span>pad] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>math<span style="color:#f92672">.</span>inf         <span style="color:#75715e"># never select pad</span>
+lprobs[:, self<span style="color:#f92672">.</span>unk] <span style="color:#f92672">-=</span> self<span style="color:#f92672">.</span>unk_penalty <span style="color:#75715e"># apply unk penalty</span>
+</code></pre></div><p>Here, <code>tokens[:, :step + 1]</code> is a 2D-tensor of size <em>(beam_size, step + 1)</em> containing tokens ids for each beam that have been predicted so far. The returned <code>lprobs</code> is a new 2D-tensor of size <em>(beam_size, output_vocabulary_size)</em>. For each output token in each beam hypothesis we have a log probability.</p>
+<p>We then need to run our beam search algorithm to select only the top hypotheses, but before that, we will handle the prefix tokens.</p>
+<h3 id="2-prefix-tokens">2/ Prefix tokens</h3>
+<p>When we ask our model(s) to generate some output, we might pass some prefix tokens to it: we constraint our model to first output those tokens. If our model is only a language model, here&rsquo;s what that would mean:</p>
+<p>Let&rsquo;s say our prefix string is &ldquo;<em>I would like</em>&rdquo;. Then, we convert this sentence to a tensor using indices from the output dictionary : we now have <code>torch.tensor([5038, 8203, 2830])</code>. Our system must now predict outputs that start always starts with 5038, 8203, and 2830.</p>
+<p>Now, we are for exemple at time <code>step = 0</code>. How do we make sure our model forces the outputs of all beams to be 5038 ?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># handle prefix tokens (possibly with different lengths)</span>
+<span style="color:#66d9ef">if</span> prefix_tokens <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">and</span> step <span style="color:#f92672">&lt;</span> prefix_tokens<span style="color:#f92672">.</span>size(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">and</span> step <span style="color:#f92672">&lt;</span> max_len:
+    prefix_toks <span style="color:#f92672">=</span> prefix_tokens[:, step]<span style="color:#f92672">.</span>unsqueeze(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>repeat(<span style="color:#ae81ff">1</span>, beam_size)<span style="color:#f92672">.</span>view(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
+    prefix_lprobs <span style="color:#f92672">=</span> lprobs<span style="color:#f92672">.</span>gather(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, prefix_toks<span style="color:#f92672">.</span>unsqueeze(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
+    prefix_mask <span style="color:#f92672">=</span> prefix_toks<span style="color:#f92672">.</span>ne(self<span style="color:#f92672">.</span>pad)
+    lprobs[prefix_mask] <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>math<span style="color:#f92672">.</span>inf
+    lprobs[prefix_mask] <span style="color:#f92672">=</span> lprobs[prefix_mask]<span style="color:#f92672">.</span>scatter_(
+        <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, prefix_toks[prefix_mask]<span style="color:#f92672">.</span>unsqueeze(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>), prefix_lprobs[prefix_mask]
+    )
+
+    <span style="color:#66d9ef">if</span> prefix_toks<span style="color:#f92672">.</span>eq(self<span style="color:#f92672">.</span>eos)<span style="color:#f92672">.</span>any():
+        <span style="color:#75715e"># the prefix includes the EOS tag, not explained here for the sake of simplicity </span>
+</code></pre></div><p>Basically, what this code does is simple: it puts $-\infty$ everywhere in the <code>lprobs</code> tensor, except for the current token, where it keeps the already computed probability.</p>
+<h3 id="3-beam-search">3/ Beam Search</h3>
+<p>Now, it&rsquo;s time to apply the Beam Search algorithm. Here is how it is defined:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BeamSearch</span>(Search):
+    <span style="color:#66d9ef">def</span> __init__(self, tgt_dict):
+        super()<span style="color:#f92672">.</span>__init__(tgt_dict)
+
+    <span style="color:#a6e22e">@torch</span><span style="color:#f92672">.</span>jit<span style="color:#f92672">.</span>export
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">step</span>(self, step: int, lprobs, scores):
+        self<span style="color:#f92672">.</span>_init_buffers(lprobs)
+        bsz, beam_size, vocab_size <span style="color:#f92672">=</span> lprobs<span style="color:#f92672">.</span>size()
+
+        <span style="color:#66d9ef">if</span> step <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+            <span style="color:#75715e"># at the first step all hypotheses are equally likely, so use</span>
+            <span style="color:#75715e"># only the first beam</span>
+            lprobs <span style="color:#f92672">=</span> lprobs[:, ::beam_size, :]<span style="color:#f92672">.</span>contiguous()
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#75715e"># make probs contain cumulative scores for each hypothesis</span>
+            lprobs<span style="color:#f92672">.</span>add_(scores[:, :, step <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>unsqueeze(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
+
+        top_prediction <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>topk(
+            lprobs<span style="color:#f92672">.</span>view(bsz, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>), <span style="color:#75715e"># convert to j * vocab_size + i representation (see below)</span>
+            k<span style="color:#f92672">=</span>min(
+                <span style="color:#75715e"># Take the best 2 x beam_size predictions. We&#39;ll choose the first</span>
+                <span style="color:#75715e"># beam_size of these which don&#39;t predict eos to continue with.</span>
+                beam_size <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>,
+                lprobs<span style="color:#f92672">.</span>view(bsz, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>size(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,  <span style="color:#75715e"># -1 so we never select pad</span>
+            ),
+        )
+        self<span style="color:#f92672">.</span>scores_buf <span style="color:#f92672">=</span> top_prediction[<span style="color:#ae81ff">0</span>]
+        self<span style="color:#f92672">.</span>indices_buf <span style="color:#f92672">=</span> top_prediction[<span style="color:#ae81ff">1</span>]
+        
+        <span style="color:#75715e"># Project back into relative indices and beams</span>
+        <span style="color:#75715e"># before : token i in hypothesis j would have been represented as j * vocab_size + i</span>
+        <span style="color:#75715e"># now : simply i, with an additional j value in beams_buf</span>
+        self<span style="color:#f92672">.</span>beams_buf <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>indices_buf <span style="color:#f92672">//</span> vocab_size
+        self<span style="color:#f92672">.</span>indices_buf <span style="color:#f92672">=</span> indices_buf<span style="color:#f92672">.</span>fmod(vocab_size)
+        
+        <span style="color:#75715e"># At this point, beams_buf and indices_buf are single-dim and contain relative indices</span>
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>scores_buf, self<span style="color:#f92672">.</span>indices_buf, self<span style="color:#f92672">.</span>beams_buf
+</code></pre></div><p>We use it by giving log-probabilities for each output tokens for each of the $k$ hypotheses. We also give scores for each of these hypotheses:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cand_scores, cand_indices, cand_beams <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>search<span style="color:#f92672">.</span>step(
+  step,
+  lprobs<span style="color:#f92672">.</span>view(bsz, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, self<span style="color:#f92672">.</span>vocab_size), <span style="color:#75715e"># (bsz, beam_size, vocab_size): we have a log-prob</span>
+                                         <span style="color:#75715e"># for each token in each hypothesis</span>
+  scores<span style="color:#f92672">.</span>view(bsz, beam_size, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)[:, :, :step], <span style="color:#75715e"># scores for each hyps at each step</span>
+)
+</code></pre></div><p>Assuming <code>self.search</code> is a BeamSearch object,  <code>cand_indices</code> will contain the 2 * top-$k$ tokens ids associated with <code>cand_beams </code> hypotheses. For example :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> cand_indices
+tensor([[<span style="color:#ae81ff">45591</span>, <span style="color:#ae81ff">54801</span>, <span style="color:#ae81ff">15738</span>, <span style="color:#ae81ff">60750</span>, <span style="color:#ae81ff">62425</span>, <span style="color:#ae81ff">60750</span>, <span style="color:#ae81ff">16349</span>, <span style="color:#ae81ff">22326</span>, <span style="color:#ae81ff">52779</span>, <span style="color:#ae81ff">53156</span>]])
+<span style="color:#f92672">&gt;&gt;&gt;</span> cand_beams
+tensor([[<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>]])
+</code></pre></div><ul>
+<li>This means that the possible following tokens are :
+<ul>
+<li>hypothesis $0$: 45591 ; 15738 ; 60750 ; 16349 ; 22326</li>
+<li>hypothesis $1$: 54801 ; 53156</li>
+<li>hypothesis $2$: 62425</li>
+<li>hypothesis $3$: 60750</li>
+<li>hypothesis $4$: 52779</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-update-our-tokens">4/ Update our tokens</h3>
+<p>Now that we have the most probable tokens inside cand_indices, associated with beams hypotheses, we can update our final token tensor so that:</p>
+<ul>
+<li>The forward in the next step will have these new tokens as the &ldquo;previous ones&rdquo;</li>
+<li>We can construct our finals sentences. A hypothesis is ended if:
+<ul>
+<li>the last token is <code>&lt;eos&gt;</code> (end-of-sentence) ; and</li>
+<li>it hasn&rsquo;t a score of $-\infty$</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># active_hypos is a tensor containing ids of hypotheses that are still active</span>
+torch<span style="color:#f92672">.</span>gather(
+  cand_indices, dim<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, index<span style="color:#f92672">=</span>active_hypos,
+  out<span style="color:#f92672">=</span>tokens_buf<span style="color:#f92672">.</span>view(bsz, beam_size, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)[:, :, step <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>],
+)
+</code></pre></div>
+	</div>
+
+        </div>
+    <div id="footer">
+        <hr>
+        <div class="container text-center mb-2">
+            <a href="https://github.com/ojroques/hugo-researcher"><small>Theme by Olivier Roques</small></a>
+        </div>
+    </div>
+
+
+</body>
+</html>

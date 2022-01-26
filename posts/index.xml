@@ -5,7 +5,16 @@
     <link>https://vpelloin.fr/posts/</link>
     <description>Recent content in Posts on Valentin Pelloin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.fr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes: How does sequence generation works in Fairseq/Espresso?</title>
+      <link>https://vpelloin.fr/posts/fairseq-sequence-generation/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://vpelloin.fr/posts/fairseq-sequence-generation/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pytorch/fairseq&#34;&gt;Fairseq&lt;/a&gt; is a &amp;ldquo;sequence sequence modeling toolkit written in &lt;a href=&#34;http://pytorch.org/&#34;&gt;PyTorch&lt;/a&gt; that allows researchers and developers to train custom models for translation, summarization, language modeling and other text generation tasks&amp;rdquo;. I will try to explain how fairesq generates sequences with a Language Model while using a beam search algorithm.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Notes: Attention! Transformers!</title>
       <link>https://vpelloin.fr/posts/attention-transformers/</link>
