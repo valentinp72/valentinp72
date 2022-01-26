@@ -6,6 +6,8 @@
 }
 .container {
     max-width: $max-width;
+	text-align: justify;
+	text-justify: inter-word;
 }
 .navbar-brand {
     @extend %link-dark;
