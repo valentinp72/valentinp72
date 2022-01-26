@@ -13,8 +13,10 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
 
-    - name: Checkout submodules
-      uses: textbook/git-checkout-submodule-action@master
+    - name: Checkout repository and submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
 
     - name: Hugo build
       uses: klakegg/actions-hugo@1.0.0
