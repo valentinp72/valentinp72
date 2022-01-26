@@ -107,7 +107,7 @@ With this layout, an encoder layer is made of a self-attention component followe
 1. [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
 2. [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025)
 3. [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](https://arxiv.org/abs/1502.03044)
-4. [Hierarchical Attention Networks for Document Classification](https://www.aclweb.org/anthology/N16-1174.pdf)](https://www.aclweb.org/anthology/N16-1174/)
+4. [Hierarchical Attention Networks for Document Classification](https://www.aclweb.org/anthology/N16-1174.pdf)
 5. [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 6. [Long Short-Term Memory-Networks for Machine Reading](https://arxiv.org/abs/1601.06733)
 7. [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
