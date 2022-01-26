@@ -12,10 +12,6 @@ jobs:
       with:
         persist-credentials: false
         fetch-depth: 0
-
-    - name: Checkout repository and submodules
-      uses: actions/checkout@v2
-      with:
         submodules: recursive
 
     - name: Hugo build
