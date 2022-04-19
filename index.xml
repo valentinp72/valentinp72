@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Valentin Pelloin</title>
-    <link>https://vpelloin.fr/</link>
+    <link>https://vpelloin.eu/</link>
     <description>Recent content on Valentin Pelloin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.eu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes: How does sequence generation works in Fairseq/Espresso?</title>
-      <link>https://vpelloin.fr/posts/fairseq-sequence-generation/</link>
+      <link>https://vpelloin.eu/posts/fairseq-sequence-generation/</link>
       <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://vpelloin.fr/posts/fairseq-sequence-generation/</guid>
+      <guid>https://vpelloin.eu/posts/fairseq-sequence-generation/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pytorch/fairseq&#34;&gt;Fairseq&lt;/a&gt; is a &amp;ldquo;sequence sequence modeling toolkit written in &lt;a href=&#34;http://pytorch.org/&#34;&gt;PyTorch&lt;/a&gt; that allows researchers and developers to train custom models for translation, summarization, language modeling and other text generation tasks&amp;rdquo;. I will try to explain how fairesq generates sequences with a Language Model while using a beam search algorithm.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Notes: Attention! Transformers!</title>
-      <link>https://vpelloin.fr/posts/attention-transformers/</link>
+      <link>https://vpelloin.eu/posts/attention-transformers/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://vpelloin.fr/posts/attention-transformers/</guid>
+      <guid>https://vpelloin.eu/posts/attention-transformers/</guid>
       <description>&lt;p&gt;Attention mechanisms, used in encoder-decoder reccurrent neural networks are able to align an input sequence to an output sequence.
 The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1706.03762&#34;&gt;Attention Is All You Need&lt;/a&gt;&amp;rdquo; is a network architecture capable of sequence-to-sequence translations, without using recurrence, and thus, allowing parallelization.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://vpelloin.fr/contact/</link>
+      <link>https://vpelloin.eu/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vpelloin.fr/contact/</guid>
+      <guid>https://vpelloin.eu/contact/</guid>
       <description>Contact me valentinpelloin@gmail.com valentin.pelloin@univ-lemans.fr Social networks twitter/valentinp72 mastodon.social/@valentinp72 github/valentinp72 linkedin/valentin-pelloin Scientifc networks google-scholar/51UZAZUAAAAJ orcid/0000-0002-1259-127X researchgate/valentin-pelloin-2 semanticscholar/1965962009  </description>
     </item>
     
     <item>
       <title>Gallery</title>
-      <link>https://vpelloin.fr/gallery/</link>
+      <link>https://vpelloin.eu/gallery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vpelloin.fr/gallery/</guid>
+      <guid>https://vpelloin.eu/gallery/</guid>
       <description>Jupiter (filmed)
       Miky way 1
       Miky way 2
@@ -50,10 +50,10 @@ The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1
     
     <item>
       <title>Valentin Pelloin</title>
-      <link>https://vpelloin.fr/about/</link>
+      <link>https://vpelloin.eu/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vpelloin.fr/about/</guid>
+      <guid>https://vpelloin.eu/about/</guid>
       <description>About Me    I&amp;rsquo;m a PhD student working on spoken language understanding projects. Interested in computer science and artificial intelligence, I did a Degree and a Master&amp;rsquo;s degree in computer science in Le Mans University (France).
 Research Interest I am currently doing my PhD at LIUM, within the AISSPER (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the AISSPER project is to offer new algorithms in order to solve spoken language understanding tasks.</description>
     </item>
