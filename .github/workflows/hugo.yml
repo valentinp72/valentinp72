@@ -19,7 +19,7 @@ jobs:
       with:
           image: ext-alpine
           target: public
-          command: --baseURL https://vpelloin.fr/
+          command: --baseURL https://vpelloin.eu/
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.0.0
