@@ -2,7 +2,7 @@
     <div id="footer">
         <hr>
         <div class="container text-center mb-2">
-            <a href="{{ .url | absURL }}"><small>{{ .text }}</small></a>
+            <a href="{{ .url | absURL }}" title="{{ .text }}"><small>{{ .text }}</small></a>
         </div>
     </div>
 {{ if ($.Scratch.Get "photoswipeloaded")  }}
