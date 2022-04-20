@@ -48,15 +48,5 @@ The transformer, described in &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/1
       Full moon</description>
     </item>
     
-    <item>
-      <title>Valentin Pelloin</title>
-      <link>https://vpelloin.eu/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vpelloin.eu/about/</guid>
-      <description>About Me    I&amp;rsquo;m a PhD student working on spoken language understanding projects. Interested in computer science and artificial intelligence, I did a Degree and a Master&amp;rsquo;s degree in computer science in Le Mans University (France).
-Research Interest I am currently doing my PhD at LIUM, within the AISSPER (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the AISSPER project is to offer new algorithms in order to solve spoken language understanding tasks.</description>
-    </item>
-    
   </channel>
 </rss>
