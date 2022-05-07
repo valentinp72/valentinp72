@@ -21,5 +21,7 @@
 		<link rel="manifest" href="/site.webmanifest">
     {{ end }}
 
+	{{ template "_internal/twitter_cards.html" . }}
+	{{ template "_internal/opengraph.html" . }}
 	{{ partial "mathjax_support.html" .  }}
 </head>

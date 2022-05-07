@@ -7,7 +7,7 @@ enableEmoji = true
 [params]
   author = "Valentin Pelloin"
   lang = "en"
-  description = ""
+  description = "Valentin Pelloin, PhD Student in Natural Language Processing (NLP), working Spoken Language Understanding (SLU) systems."
   favicon = "favicon.ico"
   [params.footer]
     text = "Theme by Olivier Roques"

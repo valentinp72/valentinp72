@@ -1,5 +1,6 @@
 +++
 title = "Contact"
+description = "Valentin Pelloin contact information"
 +++
 
 # Contact me
