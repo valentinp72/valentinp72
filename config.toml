@@ -12,6 +12,13 @@ enableEmoji = true
   [params.footer]
     text = "Theme by Olivier Roques"
     url = "https://github.com/ojroques/hugo-researcher"
+  [params.twitterCard]
+    generate = true
+	card = "summary"
+	image = "cards/home.png"
+	imageAlt = "Valentin Pelloin home card image"
+	site = "@valentinp72"
+	creator = "@valentinp72"
 
 [permalinks]
   "/" = "/:filename"

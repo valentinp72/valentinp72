@@ -3,7 +3,8 @@ title = "Contact"
 description = "Valentin Pelloin - Contact information"
 date = "2020-09-06"
 lastmod = "2022-05-07"
-images = ['cards/contact.png']
+[twitterCard]
+	image = 'cards/contact.png'
 +++
 
 # Contact me
