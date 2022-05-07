@@ -20,42 +20,111 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 
 ## Publications
 
-<div>
-<ol class="publications">
-	<li>
-		Valentin Pelloin, Nathalie Camelin, Antoine Laurent, Renato de Mori, Antoine Caubrière, Yannick Estève and Sylvain Meignier (2021).
-		<b>End2End Acoustic to Semantic Transduction.</b>
-		In <i>ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP).</i>
-		<a href="https://arxiv.org/pdf/2102.01013.pdf">PDF</a> · <a style='cursor:pointer' id="open-icassp2021">BibTeX</a> · <a href="https://doi.org/10.1109/ICASSP39728.2021.9413581">DOI</a>
-	</li>
-	<li>
-		Coralie Reutenauer, Luce Lefeuvre, Aurélie Fouqueray, Thibault Prouteau, Valentin Pelloin, Cédric Lopez, Camelin Nathalie, Frédérique Segond, Dugué Nicolas and Didier Bourigault (2020).
-		<b>Technologies sémantiques et accès à l’information dans le prescrit SNCF</b>
-		In <i>22ème Congrès de Maîtrise des Risques et de Sûreté de Fonctionnement, Institut pour la Maîtrise des Risques, Oct 2020, Le Havre (e-congrès), France.</i>
-		<a href="https://hal.archives-ouvertes.fr/hal-03476574/document">PDF</a> · <a style='cursor:pointer' id='open-lambdamu2020'>BibTeX</a> · <a href="https://hal.archives-ouvertes.fr/hal-03476574/">HAL</a>
-	</li>
-	<li>
-		Valentin Pelloin and Thibault Prouteau (2020).
-		<b>Apprentissage de plongements de mots sur des corpus en langue de spécialité : une étude d’impact</b>.
-		In <i>Actes de la 6e conférence conjointe Journées d'Études sur la Parole (JEP, 33e édition), Traitement Automatique des Langues Naturelles (TALN, 27e édition), Rencontre des Étudiants Chercheurs en Informatique pour le Traitement Automatique des Langues (RECITAL, 22e édition).</i>
-		<a href="https://www.aclweb.org/anthology/2020.jeptalnrecital-recital.13.pdf">PDF</a> · <a style='cursor:pointer' id='open-recital2020'>BibTeX</a> · <a href="https://hal.archives-ouvertes.fr/hal-02786198v3">HAL</a>
-	</li>
-</ol>
-</div>
-
-## Other work
-
-- [svd2vec](https://github.com/valentinp72/svd2vec), a Python library that converts words to vectors using PMI and SVD
-
-
 <!-- https://flamingtempura.github.io/bibtex-tidy/ -->
 
-<div id="icassp2021" class="modal">
-	<div class="modal-content">
-		<div class="close-button"><span class="icon-cross"></span></div>
-		<div class='bibtex'>
-			<pre>
-@inproceedings{pelloin2021end,
+<div>
+<ol class="publications">
+
+#### 2022
+{{< publication
+	id="wacl2022"
+	title="Using ASR-Generated Text for Spoken Language Modeling"
+	authors="Nicolas Hervé, Valentin Pelloin, Benoit Favre, Franck Dary, Antoine Laurent, Sylvain Meignier and Laurent Besacier"
+	year="2022"
+	where="ACL 2022 - Workshop on Challenges & Perspectives in Creating Large Language Models (Association for Computational Linguistics), Dublin, Ireland"
+	pdf="https://openreview.net/pdf?id=Slbe4hGSUb9"
+>}}
+@inproceedings{herve2022,
+  title = {Using ASR-Generated Text for Spoken Language Modeling},
+  author = {Nicolas Hervé, Valentin Pelloin, Benoit Favre, Franck Dary, Antoine Laurent, Sylvain Meignier, Laurent Besacier},
+  year = 2022,
+  month = {May},
+  booktitle = {ACL 2022},
+  address = {Dublin, Ireland}
+}
+{{< /publication >}}
+
+{{< publication
+	id="lrec2022_a"
+	title="The Spoken Language Understanding MEDIA Benchmark Dataset in the Era of Deep Learning: data updates, training and evaluation tools"
+	authors="Gaëlle Laperrière, Valentin Pelloin, Antoine Caubrière, Salima Mdhaffar, Nathalie Camelin, Sahar Ghannay, Bassam Jabaian and Yannick Estève"
+	year="2022"
+	where="LREC 2022 - Language Resources and Evaluation Conference 2022, Marseille, France"
+>}}
+@inproceedings{laperriere2022_b,
+  title = {The Spoken Language Understanding MEDIA Benchmark Dataset in the Era of Deep Learning: data updates, training and evaluation tools},
+  author = {Gaëlle Laperrière, Valentin Pelloin, Antoine Caubrière, Salima Mdhaffar, Nathalie Camelin, Sahar Ghannay, Bassam Jabaian and Yannick Estève},
+  year = 2022,
+  month = {June},
+  booktitle = {LREC 2022},
+  address = {Marseille, France}
+  }
+{{< /publication >}}
+
+{{< publication
+	id="lrec2022_b"
+	title="Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Undestanding"
+	authors="Salima Mdhaffar, Valentin Pelloin, Antoine Caubrière, Gaëlle Laperriere, Sahar Ghannay, Bassam Jabaian, Nathalie Camelin and Yannick Estève"
+	year="2022"
+	where="LREC 2022 - Language Resources and Evaluation Conference 2022, Marseille, France"
+>}}
+@inproceedings{mdhaffar2022,
+  title = {Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Undestanding},
+  author = {Salima Mdhaffar, Valentin Pelloin, Antoine Caubrière, Gaëlle Laperriere, Sahar Ghannay, Bassam Jabaian, Nathalie Camelin and Yannick Estève},
+  year = 2022,
+  month = {June},
+  booktitle = {LREC 2022},
+  address = {Marseille, France}
+}
+{{< /publication >}}
+
+{{< publication
+	id="jep2022_a"
+	title="Architectures neuronales bout-en-bout pour la compréhension de la parole"
+	authors="Valentin Pelloin, Nathalie Camelin, Antoine Laurent, Renato De Mori and Sylvain Meignier"
+	year="2022"
+	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
+>}}
+@inproceedings{pelloin2022,
+  title = {Architectures neuronales bout-en-bout pour la compréhension de la parole},
+  author = {Valentin Pelloin, Nathalie Camelin, Antoine Laurent, Renato De Mori and Sylvain Meignier},
+  year = 2022,
+  month = {June},
+  booktitle = {JEP 2022},
+  address = {Noirmoutier, France}
+}
+{{< /publication >}}
+
+{{< publication
+	id="jep2022_b"
+	title="Le benchmark MEDIA revisité : données, outils et évaluation dans un contexte d’apprentissage profond"
+	authors="Gaëlle Laperrière, Valentin Pelloin, Antoine Caubrière, Salima Mdhaffar, Nathalie Camelin, Sahar Ghannay, Bassam Jabaian and Yannick Estève"
+	year="2022"
+	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
+>}}
+@inproceedings{laperriere2022_a,
+  title = {Le benchmark MEDIA revisité : données, outils et évaluation dans un contexte d’apprentissage profond},
+  author = {Gaëlle Laperrière, Valentin Pelloin, Antoine Caubrière, Salima Mdhaffar, Nathalie Camelin, Sahar Ghannay, Bassam Jabaian and Yannick Estève},
+  year = 2022,
+  month = {June},
+  booktitle = {JEP 2022},
+  address = {Noirmoutier, France}
+}
+{{< /publication >}}
+
+
+
+#### 2021
+{{< publication
+	id="icassp2021"
+	title="End2End Acoustic to Semantic Transduction"
+	authors="Valentin Pelloin, Nathalie Camelin, Antoine Laurent, Renato de Mori, Antoine Caubrière, Yannick Estève and Sylvain Meignier"
+	year="2021"
+	where="ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+	pdf="https://arxiv.org/pdf/2102.01013.pdf"
+	doi="https://doi.org/10.1109/ICASSP39728.2021.9413581"
+>}}
+@inproceedings{pelloin2021,
   title = {End2End Acoustic to Semantic Transduction},
   author = {Pelloin, Valentin and Camelin, Nathalie and Laurent, Antoine and De Mori, Renato and Caubrière, Antoine and Estève, Yannick and Meignier, Sylvain},
   year = 2021,
@@ -65,18 +134,20 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   pages = {7448--7452},
   doi = {10.1109/icassp39728.2021.9413581},
   url = {https://ieeexplore.ieee.org/document/9413581}
-}
-			</pre>
-		</div>
-	</div>
-</div>
+  }
+{{< /publication >}}
 
-<div id="lambdamu2020" class="modal">
-	<div class="modal-content">
-		<div class="close-button"><span class="icon-cross"></span></div>
-		<div class='bibtex'>
-			<pre>
-@inproceedings{reutenauer2020technologies,
+#### 2020
+{{< publication
+	id="lambdamu2020"
+	title="Technologies sémantiques et accès à l’information dans le prescrit SNCF"
+	authors="Coralie Reutenauer, Luce Lefeuvre, Aurélie Fouqueray, Thibault Prouteau, Valentin Pelloin, Cédric Lopez, Camelin Nathalie, Frédérique Segond, Dugué Nicolas and Didier Bourigault"
+	year="2020"
+	where="22ème Congrès de Maîtrise des Risques et de Sûreté de Fonctionnement, Institut pour la Maîtrise des Risques, Oct 2020, Le Havre (e-congrès), France"
+	pdf="https://hal.archives-ouvertes.fr/hal-03476574/document"
+	hal="https://hal.archives-ouvertes.fr/hal-03476574/"
+>}}
+@inproceedings{reutenauer2020,
   title = {{Technologies s{\'e}mantiques et acc{\`e}s {\`a} l'information dans le prescrit SNCF}},
   author = {Reutenauer, Coralie and Lefeuvre, Luce and Fouqueray, Aur{\'e}lie and Prouteau, Thibault and Pelloin, Valentin and Lopez, C{\'e}dric and Nathalie, Camelin and Segond, Fr{\'e}d{\'e}rique and Nicolas, Dugu{\'e} and Bourigault, Didier},
   year = 2020,
@@ -87,17 +158,18 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   hal_id = {hal-03476574},
   hal_version = {v1}
 }
-			</pre>
-		</div>
-	</div>
-</div>
+{{< /publication >}}
 
-<div id="recital2020" class="modal">
-	<div class="modal-content">
-		<div class="close-button"><span class="icon-cross"></span></div>
-		<div class='bibtex'>
-			<pre>
-@inproceedings{pelloin2020apprentissage,
+{{< publication
+	id="recital2020"
+	title="Apprentissage de plongements de mots sur des corpus en langue de spécialité : une étude d’impact"
+	authors="Valentin Pelloin and Thibault Prouteau"
+	year="2020"
+	where="Actes de la 6e conférence conjointe Journées d'Études sur la Parole (JEP, 33e édition), Traitement Automatique des Langues Naturelles (TALN, 27e édition), Rencontre des Étudiants Chercheurs en Informatique pour le Traitement Automatique des Langues (RECITAL, 22e édition)"
+	pdf="https://www.aclweb.org/anthology/2020.jeptalnrecital-recital.13.pdf"
+	hal="https://hal.archives-ouvertes.fr/hal-02786198v3"
+>}}
+@inproceedings{pelloin2020,
   title = {Apprentissage de plongements de mots sur des corpus en langue de sp{\'e}cialit{\'e} : une {\'e}tude d{'}impact},
   author = {Pelloin, Valentin and Prouteau, Thibault},
   year = 2020,
@@ -109,20 +181,16 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   url = {https://aclanthology.org/2020.jeptalnrecital-recital.13},
   language = {French}
 }
-			</pre>
-		</div>
-	</div>
+{{< /publication >}}
+
+
+</ol>
 </div>
 
-<!-- <div id="nextpaperid" class="modal"> -->
-<!-- 	<div class="modal-content"> -->
-<!-- 		<div class="close-button"><span class="icon-cross"></span></div> -->
-<!-- 		<div class='bibtex'> -->
-<!-- 			<pre> -->
-<!-- 			</pre> -->
-<!-- 		</div> -->
-<!-- 	</div> -->
-<!-- </div> -->
+## Other work
+
+- [svd2vec](https://github.com/valentinp72/svd2vec), a Python library that converts words to vectors using PMI and SVD
+
 
 <!-- enabling modal boxes -->
 <script type="text/javascript" src="/modal.js"></script>

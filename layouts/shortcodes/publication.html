@@ -1,0 +1,27 @@
+<li>
+	{{ .Get "authors" }} ({{ .Get "year" }}).
+	<b>{{ .Get "title" }}.</b>
+	In <i>{{ .Get "where" }}.</i>
+	{{ if .Get "pdf" }}
+		<a href="{{ .Get "pdf" }}">PDF</a> · 
+	{{ end }}
+	{{ if .Get "doi" }}
+		<a href="{{ .Get "doi" }}">DOI</a> · 
+	{{ end }}
+	{{ if .Get "hal" }}
+		<a href="{{ .Get "hal" }}">HAL</a> · 
+	{{ end }}
+	<a style='cursor:pointer' id="open-{{ .Get "id" }}">BibTeX</a>
+</li>
+
+<div id="{{ .Get "id" }}" class="modal">
+	<div class="modal-content">
+		<div class="close-button"><span class="icon-cross"></span></div>
+		<div class='bibtex'>
+			<pre>
+{{ .Inner }}
+			</pre>
+		</div>
+	</div>
+</div>
+
