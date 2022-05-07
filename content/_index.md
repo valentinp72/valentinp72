@@ -3,6 +3,8 @@ title = "Valentin Pelloin"
 aliases = [
     "/about"
 ]
+date = "2020-09-06"
+lastmod = "2022-05-07"
 +++
 
 ## About Me
