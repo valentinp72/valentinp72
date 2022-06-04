@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2022-05-07"
+lastmod = "2022-06-04"
 +++
 
 ## About Me
