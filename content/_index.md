@@ -32,15 +32,20 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Nicolas Hervé, Valentin Pelloin, Benoit Favre, Franck Dary, Antoine Laurent, Sylvain Meignier and Laurent Besacier"
 	year="2022"
 	where="ACL 2022 - Workshop on Challenges & Perspectives in Creating Large Language Models (Association for Computational Linguistics), Dublin, Ireland"
-	pdf="https://openreview.net/pdf?id=Slbe4hGSUb9"
+	pdf="https://aclanthology.org/2022.bigscience-1.2.pdf"
+	doi="http://doi.org/10.18653/v1/2022.bigscience-1.2"
 >}}
 @inproceedings{herve2022,
-  title = {Using ASR-Generated Text for Spoken Language Modeling},
-  author = {Nicolas Hervé, Valentin Pelloin, Benoit Favre, Franck Dary, Antoine Laurent, Sylvain Meignier, Laurent Besacier},
+  title = {Using {ASR}-Generated Text for Spoken Language Modeling},
+  author = {Herv{\'e}, Nicolas  and Pelloin, Valentin  and Favre, Benoit  and Dary, Franck  and Laurent, Antoine  and Meignier, Sylvain  and Besacier, Laurent},
   year = 2022,
-  month = {May},
-  booktitle = {ACL 2022},
-  address = {Dublin, Ireland}
+  month = may,
+  booktitle = {Proceedings of BigScience Episode {\#}5 -- Workshop on Challenges {\&} Perspectives in Creating Large Language Models},
+  publisher = {Association for Computational Linguistics},
+  address = {virtual+Dublin},
+  pages = {17--25},
+  doi = {10.18653/v1/2022.bigscience-1.2},
+  url = {https://aclanthology.org/2022.bigscience-1.2}
 }
 {{< /publication >}}
 
@@ -58,7 +63,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   month = {June},
   booktitle = {LREC 2022},
   address = {Marseille, France}
-  }
+}
 {{< /publication >}}
 
 {{< publication
