@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2022-06-04"
+lastmod = "2022-06-21"
 +++
 
 ## About Me
@@ -55,6 +55,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Gaëlle Laperrière, Valentin Pelloin, Antoine Caubrière, Salima Mdhaffar, Nathalie Camelin, Sahar Ghannay, Bassam Jabaian and Yannick Estève"
 	year="2022"
 	where="LREC 2022 - Language Resources and Evaluation Conference 2022, Marseille, France"
+	pdf="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.171.pdf"
 >}}
 @inproceedings{laperriere2022_b,
   title = {The Spoken Language Understanding MEDIA Benchmark Dataset in the Era of Deep Learning: data updates, training and evaluation tools},
@@ -62,7 +63,9 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   year = 2022,
   month = {June},
   booktitle = {LREC 2022},
-  address = {Marseille, France}
+  pages = {1595--1602},
+  address = {Marseille, France},
+  publisher = {European Language Resources Association},
 }
 {{< /publication >}}
 
@@ -72,6 +75,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Salima Mdhaffar, Valentin Pelloin, Antoine Caubrière, Gaëlle Laperriere, Sahar Ghannay, Bassam Jabaian, Nathalie Camelin and Yannick Estève"
 	year="2022"
 	where="LREC 2022 - Language Resources and Evaluation Conference 2022, Marseille, France"
+	pdf="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.316.pdf"
 >}}
 @inproceedings{mdhaffar2022,
   title = {Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Undestanding},
@@ -79,7 +83,9 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   year = 2022,
   month = {June},
   booktitle = {LREC 2022},
-  address = {Marseille, France}
+  pages = {2949--2956},
+  address = {Marseille, France},
+  publisher = {European Language Resources Association},
 }
 {{< /publication >}}
 
