@@ -75,6 +75,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	year="2022"
 	where="LREC 2022 - Language Resources and Evaluation Conference 2022, Marseille, France"
 	pdf="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.171.pdf"
+	hal="https://hal.archives-ouvertes.fr/hal-03706938"
 >}}
 @inproceedings{laperriere2022_b,
   title = {The Spoken Language Understanding MEDIA Benchmark Dataset in the Era of Deep Learning: data updates, training and evaluation tools},
@@ -95,6 +96,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	year="2022"
 	where="LREC 2022 - Language Resources and Evaluation Conference 2022, Marseille, France"
 	pdf="http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.316.pdf"
+	hal="https://hal.archives-ouvertes.fr/hal-03706925"
 >}}
 @inproceedings{mdhaffar2022,
   title = {Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Undestanding},
