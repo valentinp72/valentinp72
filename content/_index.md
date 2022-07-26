@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2022-06-21"
+lastmod = "2022-07-25"
 +++
 
 ## About Me
@@ -26,6 +26,25 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 <ol class="publications">
 
 #### 2022
+
+{{< publication
+	id="interspeech2022"
+	title="ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks"
+	authors="Valentin Pelloin, Franck Dary, Nicolas Herve, Benoit Favre, Nathalie Camelin, Antoine Laurent and Laurent Besacier"
+	year="2022"
+	where="Interspeech 2022 - Camera ready version"
+	pdf="https://arxiv.org/pdf/2207.01893.pdf"
+>}}
+@misc{pelloin2022interspeech,
+  title = {{ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks}},
+  author = {Valentin Pelloin and Franck Dary and Nicolas Herve and Benoit Favre and Nathalie Camelin and Antoine Laurent and Laurent Besacier},
+  year = 2022,
+  eprint = {2207.01893},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL}
+}
+{{< /publication >}}
+
 {{< publication
 	id="wacl2022"
 	title="Using ASR-Generated Text for Spoken Language Modeling"
@@ -96,7 +115,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	year="2022"
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
 >}}
-@inproceedings{pelloin2022,
+@inproceedings{pelloin2022jep,
   title = {Architectures neuronales bout-en-bout pour la compréhension de la parole},
   author = {Valentin Pelloin, Nathalie Camelin, Antoine Laurent, Renato De Mori and Sylvain Meignier},
   year = 2022,
