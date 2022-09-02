@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2022-07-25"
+lastmod = "2022-09-02"
 +++
 
 ## About Me
@@ -116,6 +116,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Valentin Pelloin, Nathalie Camelin, Antoine Laurent, Renato De Mori and Sylvain Meignier"
 	year="2022"
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
+	pdf="/papers/2022/2022.jep-architectures-neuronales.pdf"
 >}}
 @inproceedings{pelloin2022jep,
   title = {Architectures neuronales bout-en-bout pour la compréhension de la parole},
@@ -133,6 +134,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Gaëlle Laperrière, Valentin Pelloin, Antoine Caubrière, Salima Mdhaffar, Nathalie Camelin, Sahar Ghannay, Bassam Jabaian and Yannick Estève"
 	year="2022"
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
+	pdf="/papers/2022/2022.jep-media.pdf"
 >}}
 @inproceedings{laperriere2022_a,
   title = {Le benchmark MEDIA revisité : données, outils et évaluation dans un contexte d’apprentissage profond},
