@@ -91,7 +91,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 
 {{< publication
 	id="lrec2022_b"
-	title="Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Undestanding"
+	title="Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Understanding"
 	authors="Salima Mdhaffar, Valentin Pelloin, Antoine Caubrière, Gaëlle Laperriere, Sahar Ghannay, Bassam Jabaian, Nathalie Camelin and Yannick Estève"
 	year="2022"
 	where="LREC 2022 - Language Resources and Evaluation Conference 2022, Marseille, France"
@@ -99,7 +99,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	hal="https://hal.archives-ouvertes.fr/hal-03706925"
 >}}
 @inproceedings{mdhaffar2022,
-  title = {Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Undestanding},
+  title = {Impact Analysis of the Use of Speech and Language Models Pretrained by Self-Supersivion for Spoken Language Understanding},
   author = {Salima Mdhaffar, Valentin Pelloin, Antoine Caubrière, Gaëlle Laperriere, Sahar Ghannay, Bassam Jabaian, Nathalie Camelin and Yannick Estève},
   year = 2022,
   month = {June},
