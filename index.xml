@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.eu/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Teaching</title>
+      <link>https://vpelloin.eu/teaching/</link>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://vpelloin.eu/teaching/</guid>
+      <description>Teaching activities 2021-2022 Automata and transducers (lectures and labs), 15h Python introduction (lectures, tutorials and labs), 26h Database and SQL (labs), 22h 2020-2021 Python introduction (labs), 24h Database and SQL (labs), 36h </description>
+    </item>
+    
+    <item>
       <title>Notes: How does sequence generation works in Fairseq/Espresso?</title>
       <link>https://vpelloin.eu/posts/fairseq-sequence-generation/</link>
       <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
