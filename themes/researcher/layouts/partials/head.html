@@ -22,6 +22,7 @@
     {{ end }}
 
 	{{ partial "configurable_twitter_cards.html" . }}
+	{{ partial "robot_option_noindex.html" . }}
 	{{ template "_internal/opengraph.html" . }}
 	{{ partial "mathjax_support.html" .  }}
 </head>
