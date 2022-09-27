@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.eu/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Expose ta thèse 2022</title>
+      <link>https://vpelloin.eu/links/expose_ta_these/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://vpelloin.eu/links/expose_ta_these/</guid>
+      <description>Expose ta thèse 2022 L&amp;rsquo;IA pour la compréhension de la parole Valentin PELLOIN Doctorant en 3e année au LIUM (Laboratoire d&amp;rsquo;Informatique de l&amp;rsquo;Université du Mans). Encadrement : Nathalie Camelin, Antoine Laurent et Sylvain Meignier. École doctorale MaSTIC (anciennement MathSTIC). Formation : licence puis master Informatique. Contexte : projet ANR AISSPER (Artificial Intelligence for Semantically controlled SPEech UndeRstanding). Objectif : amélioration des systèmes de reconnaissance et de compréhension de la parole à l&amp;rsquo;aide de mécanismes d&amp;rsquo;attention et de modèles bout-en-bout (end to end).</description>
+    </item>
+    
+    <item>
       <title>Teaching</title>
       <link>https://vpelloin.eu/teaching/</link>
       <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
