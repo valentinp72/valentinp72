@@ -2,7 +2,7 @@
 title = "Teaching"
 description = "Valentin Pelloin - Teaching activities"
 date = "2022-09-24"
-lastmod = "2022-09-24"
+lastmod = "2022-09-27"
 +++
 
 # Teaching activities
