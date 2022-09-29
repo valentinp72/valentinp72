@@ -3,7 +3,9 @@
     <h1>{{ .Title }}</h1>
     <ul>
         {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></li>
+			{{ if not .Params.hidden }}
+            	<li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></li>
+			{{ end }}
         {{ end }}
     </ul>
 </div>

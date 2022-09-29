@@ -2,6 +2,7 @@
 title = "Expose ta thèse 2022"
 date = "2022-09-27"
 lastmod = "2022-09-27"
+hidden = true 
 noindex = true
 +++
 
