@@ -32,17 +32,18 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	title="ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks"
 	authors="Valentin Pelloin, Franck Dary, Nicolas Herve, Benoit Favre, Nathalie Camelin, Antoine Laurent and Laurent Besacier"
 	year="2022"
-	where="Interspeech 2022 - Camera ready version"
-	pdf="https://arxiv.org/pdf/2207.01893.pdf"
+	where="Interspeech 2022, Incheon, South Korea"
+	pdf="https://www.isca-speech.org/archive/pdfs/interspeech_2022/pelloin22_interspeech.pdf"
+	doi="http://doi.org/10.21437/Interspeech.2022-352"
 >}}
-@misc{pelloin2022interspeech,
-  title = {{ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks}},
-  author = {Valentin Pelloin and Franck Dary and Nicolas Herve and Benoit Favre and Nathalie Camelin and Antoine Laurent and Laurent Besacier},
-  year = 2022,
-  eprint = {2207.01893},
-  archiveprefix = {arXiv},
-  primaryclass = {cs.CL}
-}
+@inproceedings{pelloin22_interspeech,
+  author={Valentin Pelloin and Franck Dary and Nicolas Hervé and Benoit Favre and Nathalie Camelin and Antoine LAURENT and Laurent Besacier},
+  title={{ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks}},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+  pages={3453--3457},
+  doi={10.21437/Interspeech.2022-352}
+  }
 {{< /publication >}}
 
 {{< publication
@@ -117,6 +118,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	year="2022"
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
 	pdf="/papers/2022/2022.jep-architectures-neuronales.pdf"
+	hal="https://hal.archives-ouvertes.fr/hal-03770548"
 >}}
 @inproceedings{pelloin2022jep,
   title = {Architectures neuronales bout-en-bout pour la compréhension de la parole},
@@ -135,6 +137,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	year="2022"
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
 	pdf="/papers/2022/2022.jep-media.pdf"
+	hal="https://hal.archives-ouvertes.fr/hal-03770588"
 >}}
 @inproceedings{laperriere2022_a,
   title = {Le benchmark MEDIA revisité : données, outils et évaluation dans un contexte d’apprentissage profond},
