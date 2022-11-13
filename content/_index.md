@@ -246,3 +246,6 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 
 <!-- enabling modal boxes -->
 <script type="text/javascript" src="/modal.js"></script>
+
+<!-- mastodon link verification -->
+<div style="display:none"><a rel="me" href="https://mastodon.social/@valentinp72"><!-- nothing --></a></div>
