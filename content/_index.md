@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2022-09-02"
+lastmod = "2022-11-13"
 +++
 
 ## About Me
@@ -28,6 +28,21 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 #### 2022
 
 {{< publication
+	id="slt2022"
+	title="On the Use of Semantically-Aligned Speech Representations for Spoken Language Understanding"
+	authors="Gaëlle Laperrière, Valentin Pelloin, Mickaël Rouvier, Themos Stafylakis and Yannick Estève"
+	year="2022"
+	where="SLT 2022 (accepted)"
+	pdf="https://arxiv.org/pdf/2210.05291.pdf"
+>}}
+@misc{laperriere22_slt,
+  author={Laperrière, Gaëlle and Pelloin, Valentin and Rouvier, Mickaël and Stafylakis, Themos and Estève, Yannick},
+  title={{On the Use of Semantically-Aligned Speech Representations for Spoken Language Understanding}},
+  year=2022
+  }
+{{< /publication >}}
+
+{{< publication
 	id="interspeech2022"
 	title="ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks"
 	authors="Valentin Pelloin, Franck Dary, Nicolas Herve, Benoit Favre, Nathalie Camelin, Antoine Laurent and Laurent Besacier"
@@ -37,7 +52,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	doi="http://doi.org/10.21437/Interspeech.2022-352"
 >}}
 @inproceedings{pelloin22_interspeech,
-  author={Valentin Pelloin and Franck Dary and Nicolas Hervé and Benoit Favre and Nathalie Camelin and Antoine LAURENT and Laurent Besacier},
+  author={Valentin Pelloin and Franck Dary and Nicolas Hervé and Benoit Favre and Nathalie Camelin and Antoine Laurent and Laurent Besacier},
   title={{ASR-Generated Text for Language Model Pre-training Applied to Speech Tasks}},
   year=2022,
   booktitle={Proc. Interspeech 2022},
