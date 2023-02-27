@@ -212,7 +212,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, tgt_dict):
 </span></span><span style="display:flex;"><span>        super()<span style="color:#f92672">.</span>__init__(tgt_dict)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@torch</span><span style="color:#f92672">.</span>jit<span style="color:#f92672">.</span>export
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@torch.jit.export</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">step</span>(self, step: int, lprobs, scores):
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>_init_buffers(lprobs)
 </span></span><span style="display:flex;"><span>        bsz, beam_size, vocab_size <span style="color:#f92672">=</span> lprobs<span style="color:#f92672">.</span>size()
