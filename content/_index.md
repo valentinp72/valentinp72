@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2022-11-13"
+lastmod = "2023-02-27"
 +++
 
 ## About Me
@@ -32,14 +32,20 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	title="On the Use of Semantically-Aligned Speech Representations for Spoken Language Understanding"
 	authors="Gaëlle Laperrière, Valentin Pelloin, Mickaël Rouvier, Themos Stafylakis and Yannick Estève"
 	year="2022"
-	where="SLT 2022 (accepted)"
+	where="SLT 2022, Doha, Qatar"
 	pdf="https://arxiv.org/pdf/2210.05291.pdf"
+	doi="https://doi.org/10.1109/SLT54892.2023.10023013"
 >}}
-@misc{laperriere22_slt,
-  author={Laperrière, Gaëlle and Pelloin, Valentin and Rouvier, Mickaël and Stafylakis, Themos and Estève, Yannick},
-  title={{On the Use of Semantically-Aligned Speech Representations for Spoken Language Understanding}},
-  year=2022
-  }
+@inproceedings{laperriere22_slt,
+  title = {On the Use of Semantically-Aligned Speech Representations for Spoken Language Understanding},
+  author = {Laperrière, Gaëlle and Pelloin, Valentin and Rouvier, Mickaël and Stafylakis, Themos and Estève, Yannick},
+  year = 2023,
+  booktitle = {2022 IEEE Spoken Language Technology Workshop (SLT)},
+  volume = {},
+  number = {},
+  pages = {361--368},
+  doi = {10.1109/SLT54892.2023.10023013}
+}
 {{< /publication >}}
 
 {{< publication
