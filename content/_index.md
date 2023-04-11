@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2023-02-27"
+lastmod = "2023-04-11"
 +++
 
 ## About Me
@@ -140,6 +140,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
 	pdf="/papers/2022/2022.jep-architectures-neuronales.pdf"
 	hal="https://hal.archives-ouvertes.fr/hal-03770548"
+	doi="http://doi.org/10.21437/JEP.2022-87"
 >}}
 @inproceedings{pelloin2022jep,
   title = {Architectures neuronales bout-en-bout pour la compréhension de la parole},
@@ -147,7 +148,9 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   year = 2022,
   month = {June},
   booktitle = {JEP 2022},
-  address = {Noirmoutier, France}
+  address = {Noirmoutier, France},
+  pages = {823--832},
+  doi = {10.21437/JEP.2022-87}
 }
 {{< /publication >}}
 
@@ -159,6 +162,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
 	pdf="/papers/2022/2022.jep-media.pdf"
 	hal="https://hal.archives-ouvertes.fr/hal-03770588"
+	doi="http://doi.org/10.21437/JEP.2022-51"
 >}}
 @inproceedings{laperriere2022_a,
   title = {Le benchmark MEDIA revisité : données, outils et évaluation dans un contexte d’apprentissage profond},
@@ -166,7 +170,9 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
   year = 2022,
   month = {June},
   booktitle = {JEP 2022},
-  address = {Noirmoutier, France}
+  address = {Noirmoutier, France},
+  pages = {481--490},
+  doi = {10.21437/JEP.2022-51}
 }
 {{< /publication >}}
 
