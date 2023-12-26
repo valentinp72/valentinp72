@@ -15,5 +15,5 @@ lastmod = "2022-05-07"
 # Gallery
 This gallery consists of (mainly) astrophotography pictures I made.
 
-{{< gallery dir="/gallery" />}}
+{{< gallery dir="img" />}}
 

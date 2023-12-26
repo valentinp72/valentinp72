@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+if [ $# -ne 1 ]; then
+	echo "Usage: create_thumbnails <directory of images>"
+	exit 2
+fi
+
+dir=$1
+
+for ext in jpeg jpg png gif; do
+	echo $ext
+	for f in $(find $dir -name "*.$ext" ! -name "*-thumb.$ext"); do
+		output_img=$(echo $f | sed "s/.$ext$/-thumb.$ext/g")
+		echo $f
+		convert -auto-orient "$f" -coalesce -repage 0x0 -resize '300^>' -gravity center -crop 300x300+0+0 +repage "$output_img"
+		echo ""
+	done
+done
