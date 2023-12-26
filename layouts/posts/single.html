@@ -1,7 +1,16 @@
 {{ define "main" }}
 <div class="container">
-	<h1>{{ .Title }}</h1>
-	{{ .PublishDate.Format "Jan. 2, 2006" }}
+	<h1>{{ .Title | emojify }}</h1>
+	Published on {{ .PublishDate.Format "Jan. 2, 2006" }}, last edited on {{ .Lastmod.Format "Jan. 2, 2006" }} </br>
+	<div class="tags-list">
+		{{- with .Params.tags -}}
+			{{- if ge (len .) 1 -}}
+				{{- range . -}}
+					<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>
+				{{ end -}}
+			{{- end -}}
+		{{- end -}}
+	</div>
 	{{ with .Params.linkedin }}
 		// <a href="{{ . }}">Linkedin</a>
 	{{ end }}

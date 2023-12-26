@@ -1,9 +1,9 @@
 +++
 
-title = "Notes: How does sequence generation works in Fairseq/Espresso?"
+title = ":books: Notes: How does sequence generation works in Fairseq/Espresso?"
 date = "2021-01-14"
 lastmod = "2021-01-14"
-
+tags = ['notes']
 +++
 
 [Fairseq](https://github.com/pytorch/fairseq) is a "sequence sequence modeling toolkit written in [PyTorch](http://pytorch.org/) that allows researchers and developers to train custom models for translation, summarization, language modeling and other text generation tasks". I will try to explain how fairesq generates sequences with a Language Model while using a beam search algorithm.

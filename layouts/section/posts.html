@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title | emojify }}</h1>
+	{{ range $index, $page := .Pages }}
+			{{ if not .Params.hidden }}
+			<div>
+					{{ if ne $index 0 }}
+					<hr>
+					{{ end }}
+					{{ $page.Date.Format "2006-01-02" }} | <a href="{{ $page.Permalink }}">{{ $page.Title | emojify }}</a>
+					<div style="margin-left:12pt">
+						{{ $page.Summary }}
+						{{ if $page.Truncated }}
+							<a href="{{ $page.RelPermalink }}">Read more...</a>
+						{{ end }}
+					</div>
+				</div>
+			{{ end }}
+        {{ end }}
+</div>
+{{ end }}

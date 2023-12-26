@@ -1,10 +1,10 @@
 {{ define "main" }}
 <div class="container">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title | emojify }}</h1>
     <ul>
         {{ range .Pages }}
 			{{ if not .Params.hidden }}
-            	<li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></li>
+            	<li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title | emojify }}</a></li>
 			{{ end }}
         {{ end }}
     </ul>

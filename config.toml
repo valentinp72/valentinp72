@@ -1,7 +1,7 @@
 title = "Valentin Pelloin"
 baseURL = "https://vpelloin.eu"
 theme = "researcher"
-disableKinds = ["taxonomy", "term", "robotsTXT"]
+disableKinds = ["robotsTXT"]
 enableEmoji = true
 
 [params]
