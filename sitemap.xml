@@ -15,7 +15,13 @@
     <loc>https://vpelloin.eu/posts/fairseq-sequence-generation/</loc>
     <lastmod>2021-01-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://vpelloin.eu/tags/notes/</loc>
+    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://vpelloin.eu/posts/</loc>
+    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vpelloin.eu/tags/</loc>
     <lastmod>2022-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://vpelloin.eu/posts/attention-transformers/</loc>
@@ -29,5 +35,7 @@
   </url><url>
     <loc>https://vpelloin.eu/</loc>
     <lastmod>2023-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://vpelloin.eu/categories/</loc>
   </url>
 </urlset>
