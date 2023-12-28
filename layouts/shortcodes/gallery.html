@@ -25,7 +25,7 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 				{{- $filename := (path.Base .Name) }}
 				{{- $caption :=  $filename | replaceRE  "^[0-9]*_" "" | replaceRE "\\..*" "" | replaceRE "-|_" " " }}<!-- humanized filename without extension -->
 				{{- $linkURL := print .Permalink }}<!-- absolute URL to hi-res image -->
-				{{- $thumb := .Permalink | replaceRE "(\\.)" ($thumbext | printf "%s.") }}<!-- filename of thumbnail image -->
+				{{- $thumb := .Permalink | replaceRE "(\\.(gif|jpg|jpeg|tiff|png|bmp))$" ($thumbext | printf "%s.$2") }}<!-- filename of thumbnail image -->
 				{{- $thumbURL := $thumb }}<!-- absolute URL to thumbnail image -->
 				{{- $thumbexists := true }}<!-- does a thumbnail image exist? --> 
 				<div class="box">
