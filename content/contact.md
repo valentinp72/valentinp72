@@ -2,7 +2,7 @@
 title = "Contact"
 description = "Valentin Pelloin - Contact information"
 date = "2020-09-06"
-lastmod = "2022-05-07"
+lastmod = "2024-03-28"
 [twitterCard]
 	image = 'cards/contact.png'
 +++
@@ -14,8 +14,8 @@ lastmod = "2022-05-07"
 <!-- https://jpswalsh.github.io/academicons/ -->
 
 <div class="contact">
-	<a class='contact email'  href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%61%6C%65%6E%74%69%6E%70%65%6C%6C%6F%69%6E%40%67%6D%61%69%6C%2E%63%6F%6D'>valentin<!-- abc@def -->pelloin@gm<!-- @abc.com -->ail.com</a>
-	<a class='contact email'  href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%61%6C%65%6E%74%69%6E%2E%70%65%6C%6C%6F%69%6E%40%75%6E%69%76%2D%6C%65%6D%61%6E%73%2E%66%72'>valentin.<!-- abc@def -->pelloin@univ<!-- @abc.com -->-lemans.fr</a>
+    {{< obfuscate mailto="hello@vpelloin.eu" css_class="contact email">}}
+    {{< obfuscate mailto="vpelloin@ina.fr" css_class="contact email">}}
 	<hr class='contact-sep'/>
 	Social networks
 	<a class='contact twitter' href='https://twitter.com/valentinp72'>twitter/valentinp72</a>
@@ -28,4 +28,5 @@ lastmod = "2022-05-07"
 	<a class='contact orcid' href='https://orcid.org/0000-0002-1259-127X'>orcid/0000-0002-1259-127X</a>
 	<a class='contact researchgate' href='https://www.researchgate.net/profile/Valentin-Pelloin-2'>researchgate/valentin-pelloin-2</a>
 	<a class='contact semanticscholar' href='https://www.semanticscholar.org/author/1965962009'>semanticscholar/1965962009</a>
+	<a class='contact huggingface' href='https://huggingface.co/vpelloin'>huggingface/vpelloin</a>
 </div>

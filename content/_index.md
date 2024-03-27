@@ -4,19 +4,20 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2023-04-11"
+lastmod = "2024-03-28"
 +++
 
 ## About Me
 
 {{< figure class="avatar no-photoswipe" src="/avatar-mono.jpg" nolink="yes" alt="avatar" >}}
 
-I'm a PhD student working on spoken language understanding projects.
-Interested in computer science and artificial intelligence, I did a Degree and a Master's degree in computer science in Le Mans University (France).
+I'm a researcher working on spoken and natural language processing issues.
+Interested in computer science and artificial intelligence, I defended [my PhD thesis]({{< ref "#thesis2024" >}} "PhD thesis") on "Spoken language understanding in human-computer dialogue systems in the era of pretrained models" in Le Mans University (France).
 
-## Research Interest
+<!-- ## Research Interest -->
 
-I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-avignon.fr) (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the [AISSPER](https://aissper.univ-avignon.fr) project is to offer new algorithms in order to solve spoken language understanding tasks. [AISSPER](https://aissper.univ-avignon.fr) aims at building end-to-end artificial intelligence systems capable of extracting semantic concepts directly from the speech signal.
+I am currently working at [INA](https://www.ina.fr/), the French National Audiovisual Institute, as a researcher on speech issues related to audiovisual contents. My current main research interest are Automatic Speech Recognition (ASR), speech and speaker recognition, and end-to-end information extraction.
+<!-- I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-avignon.fr) (Artificial Intelligence for Semantically controlled SPEech UndeRstanding) ANR project. The goal of the [AISSPER](https://aissper.univ-avignon.fr) project is to offer new algorithms in order to solve spoken language understanding tasks. [AISSPER](https://aissper.univ-avignon.fr) aims at building end-to-end artificial intelligence systems capable of extracting semantic concepts directly from the speech signal. -->
 
 ## Publications
 
@@ -24,6 +25,32 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 
 <div>
 <ol class="publications">
+
+#### 2024
+{{< publication
+	id="thesis2024"
+    title="La compréhension de la parole dans les systèmes de dialogues humain-machine à l'heure des modèles pré-entraînés"
+	authors="Valentin Pelloin"
+	year="2024"
+	where="Le Mans University (PhD thesis)"
+    pdf="https://theses.hal.science/tel-04446162v1/file/2024LEMA1002.pdf"
+    hal="https://theses.hal.science/tel-04446162"
+>}}
+@phdthesis{pelloin2024,
+  title = {{La compr{\'e}hension de la parole dans les syst{\`e}mes de dialogues humain-machine {\`a} l'heure des mod{\`e}les pr{\'e}-entra{\^i}n{\'e}s}},
+  author = {Pelloin, Valentin},
+  year = 2024,
+  month = Jan,
+  number = {2024LEMA1002},
+  url = {https://theses.hal.science/tel-04446162},
+  school = {{Le Mans Universit{\'e}}},
+  keywords = {Spoken language understanding ; Automatic speech recognition ; Neural networks ; Pretrained models ; Self-Supervised models ; Attention mechanisms ; Semantic concepts extraction ; Deep learning ; Compr{\'e}hension de la parole ; Reconnaissance automatique de la parole ; R{\'e}seaux de neurones ; Mod{\`e}les pr{\'e}-Entra{\^i}n{\'e}s ; Mod{\`e}les auto-Supervis{\'e}s ; M{\'e}canismes d'attention ; Extraction de concepts s{\'e}mantiques ; Apprentissage profond},
+  type = {Theses},
+  pdf = {https://theses.hal.science/tel-04446162/file/2024LEMA1002.pdf},
+  hal_id = {tel-04446162},
+  hal_version = {v1}
+}
+{{< /publication >}}
 
 #### 2022
 
@@ -54,7 +81,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Valentin Pelloin, Franck Dary, Nicolas Herve, Benoit Favre, Nathalie Camelin, Antoine Laurent and Laurent Besacier"
 	year="2022"
 	where="Interspeech 2022, Incheon, South Korea"
-	pdf="https://www.isca-speech.org/archive/pdfs/interspeech_2022/pelloin22_interspeech.pdf"
+    pdf="https://www.isca-archive.org/interspeech_2022/pelloin22_interspeech.pdf"
 	doi="http://doi.org/10.21437/Interspeech.2022-352"
 >}}
 @inproceedings{pelloin22_interspeech,
@@ -138,7 +165,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Valentin Pelloin, Nathalie Camelin, Antoine Laurent, Renato De Mori and Sylvain Meignier"
 	year="2022"
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
-	pdf="/papers/2022/2022.jep-architectures-neuronales.pdf"
+    pdf="https://www.isca-archive.org/jep_2022/pelloin22_jep.pdf"
 	hal="https://hal.archives-ouvertes.fr/hal-03770548"
 	doi="http://doi.org/10.21437/JEP.2022-87"
 >}}
@@ -160,7 +187,7 @@ I am currently doing my PhD at LIUM, within the [AISSPER](https://aissper.univ-a
 	authors="Gaëlle Laperrière, Valentin Pelloin, Antoine Caubrière, Salima Mdhaffar, Nathalie Camelin, Sahar Ghannay, Bassam Jabaian and Yannick Estève"
 	year="2022"
 	where="JEP 2022 - Journées d'Études sur la Parole 2022, Noirmoutier, France"
-	pdf="/papers/2022/2022.jep-media.pdf"
+    pdf="https://www.isca-archive.org/jep_2022/laperriere22_jep.pdf"
 	hal="https://hal.archives-ouvertes.fr/hal-03770588"
 	doi="http://doi.org/10.21437/JEP.2022-51"
 >}}
