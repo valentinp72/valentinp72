@@ -17,3 +17,6 @@ This gallery consists of (mainly) astrophotography pictures I made.
 
 {{< gallery dir="img" />}}
 
+---
+
+*All pictures in this gallery are licensed under CC BY-NC-SA 4.0. Attribution to Valentin Pelloin. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/.*
