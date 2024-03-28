@@ -1,41 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://vpelloin.eu/tags/interrail/</loc>
+    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://vpelloin.eu/posts/</loc>
+    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://vpelloin.eu/tags/</loc>
+    <lastmod>2024-03-29T00:00:00+00:00</lastmod>
+  </url>
   <url>
     <loc>https://vpelloin.eu/links/</loc>
     <lastmod>2022-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/links/expose_ta_these/</loc>
     <lastmod>2022-09-27T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/teaching/</loc>
     <lastmod>2023-03-20T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/posts/fairseq-sequence-generation/</loc>
     <lastmod>2021-01-14T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/tags/notes/</loc>
     <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vpelloin.eu/posts/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://vpelloin.eu/tags/</loc>
-    <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/posts/attention-transformers/</loc>
     <lastmod>2022-01-26T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/contact/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/gallery/</loc>
     <lastmod>2022-05-07T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/</loc>
     <lastmod>2024-03-28T00:00:00+00:00</lastmod>
-  </url><url>
+  </url>
+  <url>
     <loc>https://vpelloin.eu/categories/</loc>
   </url>
 </urlset>

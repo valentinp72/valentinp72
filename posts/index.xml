@@ -5,7 +5,17 @@
     <link>https://vpelloin.eu/posts/</link>
     <description>Recent content in Posts on Valentin Pelloin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.eu/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://vpelloin.eu/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>:bullettrain_side: Interrail 2023: Denmark, Sweden, Germany, The Netherlands, Belgium</title>
+      <link>https://vpelloin.eu/posts/interrail-2023/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://vpelloin.eu/posts/interrail-2023/</guid>
+      <description>&lt;p&gt;This summer, I did my second Interrail trip. With an &lt;a href=&#34;https://www.interrail.eu/en&#34;&gt;Interrail&lt;/a&gt; pass, you can travel with many different trains throughout Europe with little to no additional cost. In this post, I will share some pictures I made during this trip through 5 different countries, as well as share the route and trains I have taken.&lt;/p&gt;
+&lt;!-- My previous Interrail trip was described in [this post](/posts/interrail-2021). --&gt;</description>
+    </item>
+    
     <item>
       <title>:books: Notes: How does sequence generation works in Fairseq/Espresso?</title>
       <link>https://vpelloin.eu/posts/fairseq-sequence-generation/</link>
