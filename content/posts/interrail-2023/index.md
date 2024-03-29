@@ -48,7 +48,7 @@ I then took the [EuroNight](https://en.wikipedia.org/wiki/EuroNight#List_of_Euro
 
 ## E] :netherlands: Rotterdam and The Hague
 
-After Berlin, I took one of my last train of this trip to get to Rotterdam, Netherlands. The train (IC 148), operated by [DB](https://www.bahn.de/) leaved Berlin Hauptbahnhof at 8:33 and arrived in Amersfoort at 14:33. I then took a 57m train to Rotterdam Centraal. The DB InterCity train was equiped with a restaurant car, in which I enjoyed a delicious chili.
+After Berlin, I took one of my last train of this trip to get to Rotterdam, Netherlands. The train (IC 148), operated by [DB](https://www.bahn.de/) left Berlin Hauptbahnhof at 8:33 and arrived in Amersfoort at 14:33. I then took a 57m train to Rotterdam Centraal. The DB InterCity train was equiped with a restaurant car, in which I enjoyed a delicious chili.
 During one of my days in Rotterdam, I went for a short trip to The Hague. Thankfully, the trip was only 19m, and the fare was included in my Interrail pass.
 {{< gallery dir="img/rotterdam_thehague" />}}
 
