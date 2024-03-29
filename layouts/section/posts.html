@@ -7,12 +7,25 @@
 					{{ if ne $index 0 }}
 					<hr>
 					{{ end }}
-					{{ $page.Date.Format "2006-01-02" }} | <a href="{{ $page.Permalink }}">{{ $page.Title | emojify }}</a>
-					<div style="margin-left:12pt">
-						{{ $page.Summary }}
-						{{ if $page.Truncated }}
-							<a href="{{ $page.RelPermalink }}">Read more...</a>
-						{{ end }}
+					<div class="container">
+						<div class="row">
+							{{ if isset .Params "header_image" }}
+								<div class="col-sm" style="padding-bottom:5px;padding-top:5px;">
+									<a href="{{ $page.RelPermalink }}">
+										<img class='img-fluid rounded mx-auto d-block' src="{{ $page.RelPermalink }}/{{ .Params.header_image }}" alt="Illustration image for article {{ $page.Title }}">
+									</a>
+								</div>
+								<div class="col-sm-8">
+							{{ end }}
+							<p><h5>{{ $page.Date.Format "2006-01-02" }} | <a href="{{ $page.Permalink }}">{{ $page.Title | emojify }}</a></h5></p>
+									{{ $page.Summary }}
+									{{ if $page.Truncated }}
+										<a href="{{ $page.RelPermalink }}">Read more...</a>
+									{{ end }}
+							{{ if isset .Params "header_image" }}
+								</div>
+							{{ end }}
+						</div>
 					</div>
 				</div>
 			{{ end }}

@@ -3,6 +3,7 @@ title = ":books: Notes: Attention! Transformers!"
 date = "2020-09-07"
 lastmod = "2022-01-26"
 tags = ['notes']
+header_image = "img/header-1.jpg"
 +++
 
 Attention mechanisms, used in encoder-decoder reccurrent neural networks are able to align an input sequence to an output sequence.

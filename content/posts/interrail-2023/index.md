@@ -3,8 +3,7 @@ title = ":bullettrain_side: Interrail 2023: Denmark, Sweden, Germany, The Nether
 date = "2023-08-14"
 lastmod = "2024-03-29"
 tags = ['interrail']
-hidden = true
-sitemap_exclude = true
+header_image = 'img/header-4-thumb.jpeg'
 +++
 
 This summer, I did my second Interrail trip. With an [Interrail](https://www.interrail.eu/en) pass, you can travel with many different trains throughout Europe with little to no additional cost. In this post, I will share some pictures I made during this trip through 5 different countries, as well as share the route and trains I have taken.

@@ -8,11 +8,16 @@ lastmod = "2022-05-07"
 
 +++
 
-
-
 {{< load-photoswipe-theme >}}
 
 # Gallery
+
+- [:bullettrain_side: Interrail 2023 pictures (:denmark:,:sweden:,:de:,:netherlands:,:belgium:)](/posts/interrail-2023)
+- [:telescope: Astrophotography pictures](/gallery/#-astrophotography-pictures)
+
+---
+
+### :telescope: Astrophotography pictures
 This gallery consists of (mainly) astrophotography pictures I made.
 
 {{< gallery dir="img" />}}
