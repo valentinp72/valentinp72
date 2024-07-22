@@ -4,7 +4,7 @@ aliases = [
     "/about"
 ]
 date = "2020-09-06"
-lastmod = "2024-03-28"
+lastmod = "2024-07-22"
 +++
 
 ## About Me
@@ -27,6 +27,43 @@ I am currently working at [INA](https://www.ina.fr/), the French National Audiov
 <ol class="publications">
 
 #### 2024
+
+{{< publication
+	id="interspeech2024_a"
+	title="Automatic Classification of News Subjects in Broadcast News: Application to a Gender Bias Representation Analysis"
+	authors="Valentin Pelloin, Lena Dodson, Émile Chapuis, Nicolas Hervé, David Doukhan"
+	year="2024"
+	where="Interspeech 2024, Kos, Greece"
+    pdf="https://arxiv.org/pdf/2407.14180"
+	doi="https://doi.org/10.48550/arXiv.2407.14180"
+>}}
+@inproceedings{pelloin24_interspeech,
+  author={Valentin Pelloin and Lena Dodson and \'Emile Chapuis and Nicolas Hervé and David Doukhan},
+  title={{Automatic Classification of News Subjects in Broadcast News: Application to a Gender Bias Representation Analysis}},
+  year=2024,
+  booktitle={Proc. Interspeech 2024},
+  doi={10.48550/arXiv.2407.14180}
+  }
+{{< /publication >}}
+
+{{< publication
+	id="interspeech2024_b"
+	title="Gender Representation in TV and Radio: Automatic Information Extraction methods versus Manual Analyses"
+	authors="David Doukhan, Lena Dodson, Manon Conan, Valentin Pelloin, Aurélien Clamouse, Mélina Lepape, Géraldine Van Hille, Cécile Méadel, Marlène Coulomb-Gully"
+	year="2024"
+	where="Interspeech 2024, Kos, Greece"
+    pdf="https://arxiv.org/pdf/2406.10316"
+	doi="https://doi.org/10.48550/arxiv.2406.10316"
+>}}
+@inproceedings{pelloin24_interspeech,
+  author={David Doukhan and Lena Dodson and Manon Conan and Valentin Pelloin and Aurélien Clamouse and Mélina Lepape and Géraldine {Van Hille} and Cécile Méadel and Marlène Coulomb-Gully},
+  title={{Gender Representation in TV and Radio: Automatic Information Extraction methods versus Manual Analyses}},
+  year=2024,
+  booktitle={Proc. Interspeech 2024},
+  doi={10.48550/arxiv.2406.10316}
+  }
+{{< /publication >}}
+
 {{< publication
 	id="thesis2024"
     title="La compréhension de la parole dans les systèmes de dialogues humain-machine à l'heure des modèles pré-entraînés"
