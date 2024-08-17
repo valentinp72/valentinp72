@@ -12,8 +12,8 @@
     ],
     "apps": [
         {
-            "name": "My Example App",
-            "bundleIdentifier": "com.example.myapp",
+            "name": "StarTrack",
+            "bundleIdentifier": "eu.vpelloin.startrack",
             "developerName": "Example Developer",
             "subtitle": "An awesome app.",
             "localizedDescription": "This is an awesome app only available on AltStore.",
@@ -30,18 +30,10 @@
             ],
             "versions": [
                 {
-                    "version": "1.1",
-                    "date": "2022-05-01T09:00:00-08:00",
-                    "size": 20000000,
-                    "downloadURL": "https://example.com/myapp_v1.1.ipa",
-                    "localizedDescription": "New features and bug fixes.",
-                    "minOSVersion": "12.0"
-                },
-                {
-                    "version": "1.0",
+                    "version": "0.0.1",
                     "date": "2022-03-16T07:00:00-08:00",
                     "size": 10000000,
-                    "downloadURL": "https://example.com/myapp_v1.0.ipa",
+                    "downloadURL": "https://github.com/valentinp72/star-track/releases/download/v0.0.1/StarTrack.ipa",
                     "localizedDescription": "Initial release."
                 }
             ],
@@ -57,73 +49,6 @@
                 }
             }
         },
-        {
-            "name": "Another Example App",
-            "bundleIdentifier": "com.example.anotherapp",
-            "developerName": "Example Developer",
-            "subtitle": "Another awesome app.",
-            "localizedDescription": "This is another awesome app only available on AltStore.",
-            "iconURL": "https://f000.backblazeb2.com/file/rileytestut/ExampleSource/SharkApp.png",
-            "tintColor": "#3660A2",
-            "screenshots": {
-                "iphone": [
-                    "https://example.com/anotherapp_portrait_1.png",
-                    "https://example.com/anotherapp_portrait_2.png",
-                    {
-                        "imageURL": "https://example.com/anotherapp_landscape.png",
-                        "width": 2556,
-                        "height": 1179
-                    }
-                ],
-                "ipad": [
-                    {
-                        "imageURL": "https://example.com/anotherapp_ipad_portrait.png",
-                        "width": 1668,
-                        "height": 2388
-                    },
-                    {
-                        "imageURL": "https://example.com/anotherapp_ipad_landscape.png",
-                        "width": 2388,
-                        "height": 1668
-                    }
-                ]
-            },
-            "versions": [
-                {
-                    "version": "1.2",
-                    "date": "2022-06-21T09:00:00-08:00",
-                    "downloadURL": "https://example.com/anotherapp_v1.2.ipa",
-                    "localizedDescription": "Bug fixes and performance improvements.",
-                    "size": 81514,
-                    "minOSVersion": "13.0"
-                },
-                {
-                    "version": "1.1",
-                    "date": "2022-04-15T10:00:00-08:00",
-                    "downloadURL": "https://example.com/anotherapp_v1.1.ipa",
-                    "localizedDescription": "New features!",
-                    "size": 81364,
-                    "minOSVersion": "13.0",
-                    "maxOSVersion": "16.3"
-                },
-                {
-                    "version": "1.0",
-                    "date": "2022-02-02T07:00:00-08:00",
-                    "downloadURL": "https://example.com/anotherapp_v1.0.ipa",
-                    "localizedDescription": "Initial release.",
-                    "size": 79821
-                }
-            ],
-            "appPermissions": {
-                "entitlements": [
-                    "com.apple.developer.healthkit",
-                    "com.apple.developer.game-center"
-                ],
-                "privacy": {
-                    "NSLocalNetworkUsageDescription": "App scans the local network for nearby computers."
-                }
-            }
-        }
     ],
     "news": [
         {
