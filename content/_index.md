@@ -34,15 +34,16 @@ I am currently working at [INA](https://www.ina.fr/), the French National Audiov
 	authors="Valentin Pelloin, Lena Dodson, Émile Chapuis, Nicolas Hervé, David Doukhan"
 	year="2024"
 	where="Interspeech 2024, Kos, Greece"
-    pdf="https://arxiv.org/pdf/2407.14180"
-	doi="https://doi.org/10.48550/arXiv.2407.14180"
+    pdf="https://www.isca-archive.org/interspeech_2024/pelloin24_interspeech.pdf"
+	doi="https://doi.org/10.21437/Interspeech.2024-1854"
 >}}
 @inproceedings{pelloin24_interspeech,
   author={Valentin Pelloin and Lena Dodson and \'Emile Chapuis and Nicolas Hervé and David Doukhan},
   title={{Automatic Classification of News Subjects in Broadcast News: Application to a Gender Bias Representation Analysis}},
   year=2024,
   booktitle={Proc. Interspeech 2024},
-  doi={10.48550/arXiv.2407.14180}
+  pages={3055--3059},
+  doi={10.21437/Interspeech.2024-1854},
   }
 {{< /publication >}}
 
@@ -52,15 +53,16 @@ I am currently working at [INA](https://www.ina.fr/), the French National Audiov
 	authors="David Doukhan, Lena Dodson, Manon Conan, Valentin Pelloin, Aurélien Clamouse, Mélina Lepape, Géraldine Van Hille, Cécile Méadel, Marlène Coulomb-Gully"
 	year="2024"
 	where="Interspeech 2024, Kos, Greece"
-    pdf="https://arxiv.org/pdf/2406.10316"
-	doi="https://doi.org/10.48550/arxiv.2406.10316"
+    pdf="https://www.isca-archive.org/interspeech_2024/doukhan24_interspeech.pdf"
+	doi="https://doi.org/10.21437/Interspeech.2024-1921"
 >}}
-@inproceedings{pelloin24_interspeech,
+@inproceedings{doukhan24_interspeech,
   author={David Doukhan and Lena Dodson and Manon Conan and Valentin Pelloin and Aurélien Clamouse and Mélina Lepape and Géraldine {Van Hille} and Cécile Méadel and Marlène Coulomb-Gully},
   title={{Gender Representation in TV and Radio: Automatic Information Extraction methods versus Manual Analyses}},
   year=2024,
   booktitle={Proc. Interspeech 2024},
-  doi={10.48550/arxiv.2406.10316}
+  pages={3060--3064},
+  doi={10.21437/Interspeech.2024-1921}
   }
 {{< /publication >}}
 
