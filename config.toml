@@ -29,8 +29,8 @@ enableEmoji = true
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Teaching"
-    url = "/teaching"
+    name = "CV"
+    url = "https://cv.vpelloin.eu/cv.pdf"
     weight = 2
   [[menu.main]]
     name = "Posts"
