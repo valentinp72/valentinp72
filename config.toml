@@ -30,7 +30,7 @@ enableEmoji = true
     weight = 1
   [[menu.main]]
     name = "CV"
-    url = "https://cv.vpelloin.eu/cv.pdf"
+    url = "https://cv.vpelloin.eu/"
     weight = 2
   [[menu.main]]
     name = "Posts"
