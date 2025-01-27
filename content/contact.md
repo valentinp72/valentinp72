@@ -18,7 +18,8 @@ lastmod = "2024-03-28"
     {{< obfuscate mailto="vpelloin@ina.fr" css_class="contact email">}}
 	<hr class='contact-sep'/>
 	Social networks
-	<a class='contact twitter' href='https://twitter.com/valentinp72'>twitter/valentinp72</a>
+	<!-- <a class='contact twitter' href='https://twitter.com/valentinp72'>twitter/valentinp72</a> -->
+	<a class='contact bluesky' href='https://bsky.app/profile/vpelloin.eu'>bluesky/@vpelloin.eu</a>
 	<a class='contact mastodon' href='https://mastodon.social/@valentinp72'>mastodon.social/@valentinp72</a>
 	<a class='contact github'  href='https://github.com/valentinp72'>github/valentinp72</a>
 	<a class='contact linkedin' href='https://www.linkedin.com/in/valentin-pelloin/'>linkedin/valentin-pelloin</a>
